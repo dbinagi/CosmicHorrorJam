@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9dea9b74b708b3489ea313065d9d59c, type: 3}
+  m_Name: Balance
+  m_EditorClassIdentifier: 
+  hourDuration: 0.5
+  daysForEnd: 21
+  petMaxHunger: 1000
+  hungerMaxCooldownLevel0: 10
+  hungerMinCooldownLevel0: 10
+  hungerLossMinLevel0: 20
+  hungerLossMaxLevel0: 20
+  daysForLevel1: 7
+  hungerMaxCooldownLevel1: 10
+  hungerMinCooldownLevel1: 10
+  hungerLossMinLevel1: 20
+  hungerLossMaxLevel1: 20
+  daysForLevel2: 14
+  hungerMaxCooldownLevel2: 10
+  hungerMinCooldownLevel2: 10
+  hungerLossMinLevel2: 20
+  hungerLossMaxLevel2: 20
+  foodRatValue: 50
+  foodVegetablesValue: 25
+  foodHumanValue: 150
