@@ -12,7 +12,7 @@ public class RoomManager : Singleton<RoomManager>
     public const int ROOM_GARDEN = 2;
     public const int ROOM_BED = 3;
 
-    int currentRoom;
+    public int currentRoom;
 
     [SerializeField]
     LeanTweenType moveEasing;

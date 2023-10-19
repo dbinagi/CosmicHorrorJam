@@ -6,6 +6,15 @@ public class RatController : Singleton<RatController>
 
     GameObject mouseObj;
 
+    [SerializeField]
+    GameObject spawnRoom0;
+    [SerializeField]
+    GameObject spawnRoom1;
+    [SerializeField]
+    GameObject spawnRoom2;
+    [SerializeField]
+    GameObject spawnRoom3;
+
     float lastRat;
 
     void Awake()
@@ -17,15 +26,31 @@ public class RatController : Singleton<RatController>
     {
         if (Time.time - lastRat >= GameManager.Instance.balance.RatSpawnCooldown)
         {
-            SpawnRat();
+            if (RoomManager.Instance.currentRoom != 2)
+                SpawnRat();
         }
     }
 
     void SpawnRat()
     {
         GameObject rat = Instantiate(mouseObj, Vector3.zero, Quaternion.identity);
-        rat.transform.position = Camera.main.transform.forward * -0.7f;
-        rat.transform.position = rat.transform.position + (Camera.main.transform.right * 3f);
+
+        switch (RoomManager.Instance.currentRoom)
+        {
+            case 0:
+                rat.GetComponent<Rat>().SetPosition(spawnRoom0.transform.position);
+                break;
+            case 1:
+                rat.GetComponent<Rat>().SetPosition(spawnRoom1.transform.position);
+                break;
+            case 2:
+                rat.GetComponent<Rat>().SetPosition(spawnRoom2.transform.position);
+                break;
+            case 3:
+                rat.GetComponent<Rat>().SetPosition(spawnRoom3.transform.position);
+                break;
+        }
+
         lastRat = Time.time;
     }
 
