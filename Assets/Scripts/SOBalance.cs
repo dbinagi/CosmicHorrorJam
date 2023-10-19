@@ -7,7 +7,6 @@ public class SOBalance : ScriptableObject
 
     public int daysForEnd;
     public int petMaxHunger;
-
     [Header("Level 0")]
     public float hungerMaxCooldownLevel0;
     public float hungerMinCooldownLevel0;
@@ -37,5 +36,11 @@ public class SOBalance : ScriptableObject
     public float foodRatValue;
     public float foodVegetablesValue;
     public float foodHumanValue;
+
+    [Header("Rat")]
+    public float RatSpawnCooldown;
+    public float RatSpeedLevel0;
+    public float RatSpeedLevel1;
+    public float RatSpeedLevel2;
 
 }

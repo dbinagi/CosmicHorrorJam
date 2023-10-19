@@ -3,19 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
+using UnityEngine.UI;
 
 public class RoomPet : Singleton<RoomPet>
 {
 
+    bool foodSelectorOpen = false;
+
     public void OnFeedClick()
     {
-        OpenFoodSelector();
+        if (foodSelectorOpen)
+        {
+            CloseFoodSelector();
+            foodSelectorOpen = false;
+        }
+        else
+        {
+            OpenFoodSelector();
+            foodSelectorOpen = true;
+        }
     }
 
     public void FeedRat()
     {
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodRatValue);
         CloseFoodSelector();
+        GameManager.Instance.ratAmount -= 1;
     }
 
     public void FeedHuman()
@@ -35,6 +48,18 @@ public class RoomPet : Singleton<RoomPet>
         GameObject obj = UIManager.Instance.FindInCanvas("FoodSelector");
         obj.SetActive(true);
         obj.GetComponent<CanvasGroup>().alpha = 0;
+
+        UIManager.Instance.SetText("TxtRatAmount", "x" + GameManager.Instance.ratAmount + " rats");
+        if (GameManager.Instance.ratAmount <= 0)
+        {
+            GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedRat");
+            btnRat.GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedRat");
+            btnRat.GetComponent<Button>().interactable = true;
+        }
 
         LTDescr tween = LeanTween.value(obj, 0, 1, 0.5f);
 

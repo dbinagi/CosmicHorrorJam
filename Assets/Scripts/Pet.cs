@@ -10,7 +10,7 @@ public class Pet : MonoBehaviour
     [SerializeField] float blinkMinCooldown;
     [SerializeField] float blinkMaxCooldown;
 
-    int currentLevel = 0;
+    public int currentLevel = 0;
     float currentHunger;
 
     float blinkCD;

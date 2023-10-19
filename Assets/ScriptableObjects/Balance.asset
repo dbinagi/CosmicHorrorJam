@@ -32,3 +32,7 @@ MonoBehaviour:
   foodRatValue: 50
   foodVegetablesValue: 25
   foodHumanValue: 150
+  RatSpawnCooldown: 10
+  RatSpeedLevel0: 2
+  RatSpeedLevel1: 2
+  RatSpeedLevel2: 2
