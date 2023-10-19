@@ -15,12 +15,10 @@ public class RoomPet : Singleton<RoomPet>
         if (foodSelectorOpen)
         {
             CloseFoodSelector();
-            foodSelectorOpen = false;
         }
         else
         {
             OpenFoodSelector();
-            foodSelectorOpen = true;
         }
     }
 
@@ -67,6 +65,7 @@ public class RoomPet : Singleton<RoomPet>
         {
             obj.GetComponent<CanvasGroup>().alpha = alpha;
         });
+        foodSelectorOpen = true;
     }
 
     void CloseFoodSelector()
@@ -77,6 +76,7 @@ public class RoomPet : Singleton<RoomPet>
         {
             obj.GetComponent<CanvasGroup>().alpha = alpha;
         });
+        foodSelectorOpen = false;
     }
 
 }
