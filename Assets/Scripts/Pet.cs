@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TurtleGames.Framework.Runtime.Camera;
 using TurtleGames.Framework.Runtime.UI;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,14 @@ public class Pet : MonoBehaviour
     [SerializeField] float blinkMinCooldown;
     [SerializeField] float blinkMaxCooldown;
 
+    [SerializeField]
+    GameObject petLvl0;
+
+    [SerializeField]
+    GameObject petLvl1;
+
+    [SerializeField]
+    GameObject petLvl2;
 
     [SerializeField]
     List<PoopSlot> poopPositions;
@@ -35,7 +44,7 @@ public class Pet : MonoBehaviour
 
     void Awake()
     {
-        animator = GetComponentInChildren<Animator>();
+        animator = petLvl0.GetComponentInChildren<Animator>();
         blinkCD = Random.Range(blinkMinCooldown, blinkMaxCooldown);
         hungerCD = Random.Range(GameManager.Instance.balance.hungerMinCooldownLevel0, GameManager.Instance.balance.hungerMaxCooldownLevel0);
         currentHunger = GameManager.Instance.balance.petMaxHunger;
@@ -84,11 +93,33 @@ public class Pet : MonoBehaviour
     public void SetLevel(int level)
     {
         currentLevel = level;
+        Camera.main.GetComponent<CameraController>().FadeOutToColor(0.1f);
+        StartCoroutine(ChangeSprite());
     }
 
     #endregion
 
     #region Private Functions
+
+    IEnumerator ChangeSprite()
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        if (currentLevel == 1)
+        {
+            petLvl0.SetActive(false);
+            petLvl1.SetActive(true);
+            animator = petLvl1.GetComponentInChildren<Animator>();
+        }
+        else if (currentLevel == 2)
+        {
+            petLvl1.SetActive(false);
+            petLvl2.SetActive(true);
+            animator = petLvl2.GetComponentInChildren<Animator>();
+        }
+        Camera.main.GetComponent<CameraController>().FadeInFromColor(0.3f);
+    }
+
 
     void Blink()
     {

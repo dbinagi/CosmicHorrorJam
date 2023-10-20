@@ -33,6 +33,7 @@ public class RoomPet : Singleton<RoomPet>
     {
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodHumanValue);
         CloseFoodSelector();
+        GameManager.Instance.humanAmount -= 1;
     }
 
     public void FeedVegetables()
@@ -56,6 +57,18 @@ public class RoomPet : Singleton<RoomPet>
         else
         {
             GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedRat");
+            btnRat.GetComponent<Button>().interactable = true;
+        }
+
+        UIManager.Instance.SetText("TxtHumanAmount", "x" + GameManager.Instance.humanAmount + " humans");
+        if (GameManager.Instance.humanAmount <= 0)
+        {
+            GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedHuman");
+            btnRat.GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedHuman");
             btnRat.GetComponent<Button>().interactable = true;
         }
 

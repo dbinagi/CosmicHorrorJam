@@ -51,3 +51,5 @@ MonoBehaviour:
   RatSpeedLevel0: 5
   RatSpeedLevel1: 5
   RatSpeedLevel2: 5
+  initialHumanCost: 5
+  costIncreasePerPurchase: 1

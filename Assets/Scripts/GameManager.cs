@@ -1,3 +1,4 @@
+using TurtleGames.Framework.Runtime.Camera;
 using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
 using UnityEngine;
@@ -16,12 +17,18 @@ public class GameManager : Singleton<GameManager>
     public int ratAmount;
 
     [SerializeField]
+    public int humanAmount;
+
+    [SerializeField]
     public int currentCultPoints;
+
+    public int totalHumanPurchases;
 
     void Start()
     {
         currentCultPoints = 0;
-        UIManager.Instance.SetText("TxtCultPoints", "Cult Points: " + currentCultPoints);
+        RefreshCultPoints();
+        Camera.main.GetComponent<CameraController>().FadeInFromColor(2);
     }
 
     void Update()
@@ -42,7 +49,7 @@ public class GameManager : Singleton<GameManager>
                 {
                     poop.TakePoop();
                     currentCultPoints += Random.Range(balance.minCultPointsPerPoop, balance.maxCultPointsPerPoop);
-                    UIManager.Instance.SetText("TxtCultPoints", "Cult Points: " + currentCultPoints);
+                    RefreshCultPoints();
                 }
             }
         }
@@ -86,6 +93,24 @@ public class GameManager : Singleton<GameManager>
 
     public void CouldNotPoop()
     {
+    }
+
+    public int GetHumanCost()
+    {
+        return (int)(balance.initialHumanCost + (totalHumanPurchases * balance.costIncreasePerPurchase));
+    }
+
+    public void BuyHuman(int cost)
+    {
+        totalHumanPurchases++;
+        currentCultPoints -= cost;
+        humanAmount++;
+        RefreshCultPoints();
+    }
+
+    public void RefreshCultPoints()
+    {
+        UIManager.Instance.SetText("TxtCultPoints", "Cult Points: " + currentCultPoints);
     }
 
 }

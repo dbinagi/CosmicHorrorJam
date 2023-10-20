@@ -66,4 +66,8 @@ public class SOBalance : ScriptableObject
     public float RatSpeedLevel1;
     public float RatSpeedLevel2;
 
+    [Header("Human")]
+    public float initialHumanCost;
+    public float costIncreasePerPurchase;
+
 }
