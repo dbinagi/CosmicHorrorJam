@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using TurtleGames.Framework.Runtime.UI;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +12,10 @@ public class Pet : MonoBehaviour
     [SerializeField] float blinkMinCooldown;
     [SerializeField] float blinkMaxCooldown;
 
+
+    [SerializeField]
+    List<PoopSlot> poopPositions;
+
     public int currentLevel = 0;
     float currentHunger;
 
@@ -18,6 +24,12 @@ public class Pet : MonoBehaviour
 
     float hungerCD;
     float lastHunger;
+
+    float poopCD;
+    float lastPoop;
+    Stack<int> poopStack = new Stack<int>();
+
+    float currentWellbeing;
 
     #region Unity Functions
 
@@ -29,6 +41,12 @@ public class Pet : MonoBehaviour
         currentHunger = GameManager.Instance.balance.petMaxHunger;
         GameObject sliderHunger = UIManager.Instance.FindInCanvas("SliderHunger");
         sliderHunger.GetComponent<Slider>().maxValue = currentHunger;
+
+        currentWellbeing = GameManager.Instance.balance.petMaxWellbeing;
+        GameObject sliderWellbeing = UIManager.Instance.FindInCanvas("SliderWellbeing");
+        sliderWellbeing.GetComponent<Slider>().maxValue = currentHunger;
+
+        poopCD = Random.Range(GameManager.Instance.balance.poopMinCooldownLevel0, GameManager.Instance.balance.poopMinCooldownLevel0);
     }
 
     void Update()
@@ -42,6 +60,11 @@ public class Pet : MonoBehaviour
         {
             Hunger();
         }
+
+        if (Time.time - lastPoop >= poopCD)
+        {
+            Poop();
+        }
     }
 
     #endregion
@@ -51,8 +74,9 @@ public class Pet : MonoBehaviour
     public void Feed(float food)
     {
         animator.SetTrigger("Eat");
+        poopStack.Push(1);
 
-        currentHunger = Mathf.Clamp(currentHunger+food, 0, GameManager.Instance.balance.petMaxHunger);
+        currentHunger = Mathf.Clamp(currentHunger + food, 0, GameManager.Instance.balance.petMaxHunger);
         GameObject slider = UIManager.Instance.FindInCanvas("SliderHunger");
         slider.GetComponent<Slider>().value = currentHunger;
     }
@@ -100,8 +124,100 @@ public class Pet : MonoBehaviour
         GameObject slider = UIManager.Instance.FindInCanvas("SliderHunger");
         slider.GetComponent<Slider>().value = currentHunger;
 
-        if (currentHunger <= 0){
+        if (currentHunger <= 0)
+        {
             GameManager.Instance.DieByFood();
+        }
+    }
+
+    void Poop()
+    {
+        lastPoop = Time.time;
+
+        if (poopStack.Count == 0)
+        {
+            return;
+        }
+        int amount = poopStack.Pop();
+
+        bool couldPoop = false;
+
+        switch (currentLevel)
+        {
+            case 0:
+                poopCD = Random.Range(GameManager.Instance.balance.poopMinCooldownLevel0, GameManager.Instance.balance.poopMaxCooldownLevel0);
+                RandomizeList(poopPositions);
+                foreach (PoopSlot slot in poopPositions)
+                {
+                    if (slot.isEmpty)
+                    {
+                        couldPoop = true;
+                        slot.Poop();
+                        break;
+                    }
+                }
+                if (!couldPoop)
+                {
+                    GameManager.Instance.CouldNotPoop();
+                    currentWellbeing -= Random.Range(GameManager.Instance.balance.wellbeingMinLossPerNotPoopLevel0, GameManager.Instance.balance.wellbeingMaxLossPerNotPoopLevel0);
+                    GameObject sliderWellbeing = UIManager.Instance.FindInCanvas("SliderWellbeing");
+                    sliderWellbeing.GetComponent<Slider>().value = currentWellbeing;
+                }
+                break;
+            case 1:
+                poopCD = Random.Range(GameManager.Instance.balance.poopMinCooldownLevel1, GameManager.Instance.balance.poopMaxCooldownLevel1);
+                RandomizeList(poopPositions);
+                foreach (PoopSlot slot in poopPositions)
+                {
+                    if (slot.isEmpty)
+                    {
+                        couldPoop = true;
+                        slot.Poop();
+                        break;
+                    }
+                }
+                if (!couldPoop)
+                {
+                    GameManager.Instance.CouldNotPoop();
+                    currentWellbeing -= Random.Range(GameManager.Instance.balance.wellbeingMinLossPerNotPoopLevel1, GameManager.Instance.balance.wellbeingMaxLossPerNotPoopLevel1);
+                    GameObject sliderWellbeing = UIManager.Instance.FindInCanvas("SliderWellbeing");
+                    sliderWellbeing.GetComponent<Slider>().value = currentWellbeing;
+                }
+                break;
+            case 2:
+                poopCD = Random.Range(GameManager.Instance.balance.poopMinCooldownLevel2, GameManager.Instance.balance.poopMaxCooldownLevel2);
+                RandomizeList(poopPositions);
+                foreach (PoopSlot slot in poopPositions)
+                {
+                    if (slot.isEmpty)
+                    {
+                        couldPoop = true;
+                        slot.Poop();
+                        break;
+                    }
+                }
+                if (!couldPoop)
+                {
+                    GameManager.Instance.CouldNotPoop();
+                    currentWellbeing -= Random.Range(GameManager.Instance.balance.wellbeingMinLossPerNotPoopLevel2, GameManager.Instance.balance.wellbeingMaxLossPerNotPoopLevel2);
+                    GameObject sliderWellbeing = UIManager.Instance.FindInCanvas("SliderWellbeing");
+                    sliderWellbeing.GetComponent<Slider>().value = currentWellbeing;
+
+                }
+                break;
+        }
+    }
+
+    // Método para mezclar aleatoriamente una lista
+    private void RandomizeList<T>(List<T> list)
+    {
+        int n = list.Count;
+        for (int i = 0; i < n - 1; i++)
+        {
+            int j = Random.Range(i, n);
+            T temp = list[i];
+            list[i] = list[j];
+            list[j] = temp;
         }
     }
 

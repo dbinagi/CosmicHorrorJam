@@ -1,4 +1,5 @@
 using TurtleGames.Framework.Runtime.Core;
+using TurtleGames.Framework.Runtime.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,8 +15,13 @@ public class GameManager : Singleton<GameManager>
     [SerializeField]
     public int ratAmount;
 
+    [SerializeField]
+    public int currentCultPoints;
+
     void Start()
     {
+        currentCultPoints = 0;
+        UIManager.Instance.SetText("TxtCultPoints", "Cult Points: " + currentCultPoints);
     }
 
     void Update()
@@ -30,6 +36,13 @@ public class GameManager : Singleton<GameManager>
                 {
                     ratAmount += 1;
                     Destroy(rat.gameObject);
+                }
+                PoopSlot poop = hit.Value.transform.GetComponent<PoopSlot>();
+                if (poop != null)
+                {
+                    poop.TakePoop();
+                    currentCultPoints += Random.Range(balance.minCultPointsPerPoop, balance.maxCultPointsPerPoop);
+                    UIManager.Instance.SetText("TxtCultPoints", "Cult Points: " + currentCultPoints);
                 }
             }
         }
@@ -69,6 +82,10 @@ public class GameManager : Singleton<GameManager>
             return hitData;
         }
         return null;
+    }
+
+    public void CouldNotPoop()
+    {
     }
 
 }

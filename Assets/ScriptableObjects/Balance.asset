@@ -15,20 +15,35 @@ MonoBehaviour:
   hourDuration: 2
   daysForEnd: 9
   petMaxHunger: 100
+  petMaxWellbeing: 100
+  maxCultPointsPerPoop: 10
+  minCultPointsPerPoop: 20
   hungerMaxCooldownLevel0: 4
   hungerMinCooldownLevel0: 4
   hungerLossMinLevel0: 3
   hungerLossMaxLevel0: 3
+  poopMaxCooldownLevel0: 5
+  poopMinCooldownLevel0: 5
+  wellbeingMinLossPerNotPoopLevel0: 5
+  wellbeingMaxLossPerNotPoopLevel0: 10
   daysForLevel1: 3
   hungerMaxCooldownLevel1: 4
   hungerMinCooldownLevel1: 4
   hungerLossMinLevel1: 5
   hungerLossMaxLevel1: 5
+  poopMaxCooldownLevel1: 5
+  poopMinCooldownLevel1: 5
+  wellbeingMinLossPerNotPoopLevel1: 5
+  wellbeingMaxLossPerNotPoopLevel1: 10
   daysForLevel2: 6
   hungerMaxCooldownLevel2: 4
   hungerMinCooldownLevel2: 4
   hungerLossMinLevel2: 8
   hungerLossMaxLevel2: 8
+  poopMaxCooldownLevel2: 5
+  poopMinCooldownLevel2: 5
+  wellbeingMinLossPerNotPoopLevel2: 5
+  wellbeingMaxLossPerNotPoopLevel2: 10
   foodRatValue: 20
   foodVegetablesValue: 10
   foodHumanValue: 50
