@@ -15,7 +15,7 @@ public class TimeManager : Singleton<TimeManager>
 
     void Start()
     {
-        UIManager.Instance.SetText("TxtDays", "Days: " + currentDay);
+        UIManager.Instance.SetText("TxtDays", "DAY " + currentDay);
     }
 
     void Update()
@@ -42,7 +42,7 @@ public class TimeManager : Singleton<TimeManager>
     void DayPassed()
     {
         currentDay++;
-        UIManager.Instance.SetText("TxtDays", "Days: " + currentDay);
+        UIManager.Instance.SetText("TxtDays", "DAY " + currentDay);
 
         if (currentDay == GameManager.Instance.balance.daysForLevel1)
         {
