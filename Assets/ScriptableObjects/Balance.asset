@@ -15,24 +15,24 @@ MonoBehaviour:
   hourDuration: 2
   daysForEnd: 9
   petMaxHunger: 100
-  hungerMaxCooldownLevel0: 2
-  hungerMinCooldownLevel0: 2
-  hungerLossMinLevel0: 1
-  hungerLossMaxLevel0: 1
+  hungerMaxCooldownLevel0: 4
+  hungerMinCooldownLevel0: 4
+  hungerLossMinLevel0: 3
+  hungerLossMaxLevel0: 3
   daysForLevel1: 3
-  hungerMaxCooldownLevel1: 2
-  hungerMinCooldownLevel1: 2
-  hungerLossMinLevel1: 3
-  hungerLossMaxLevel1: 3
+  hungerMaxCooldownLevel1: 4
+  hungerMinCooldownLevel1: 4
+  hungerLossMinLevel1: 5
+  hungerLossMaxLevel1: 5
   daysForLevel2: 6
-  hungerMaxCooldownLevel2: 2
-  hungerMinCooldownLevel2: 2
-  hungerLossMinLevel2: 5
-  hungerLossMaxLevel2: 5
+  hungerMaxCooldownLevel2: 4
+  hungerMinCooldownLevel2: 4
+  hungerLossMinLevel2: 8
+  hungerLossMaxLevel2: 8
   foodRatValue: 20
   foodVegetablesValue: 10
   foodHumanValue: 50
-  RatSpawnCooldown: 2
+  RatSpawnCooldown: 10
   RatSpeedLevel0: 5
   RatSpeedLevel1: 5
   RatSpeedLevel2: 5
