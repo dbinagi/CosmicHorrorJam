@@ -1,3 +1,4 @@
+using System.Collections;
 using TurtleGames.Framework.Runtime.Camera;
 using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
@@ -27,8 +28,11 @@ public class GameManager : Singleton<GameManager>
 
     public int totalHumanPurchases;
 
+    public bool gameStarted;
+
     void Start()
     {
+        gameStarted = false;
         currentCultPoints = 0;
         RefreshCultPoints();
         Camera.main.GetComponent<CameraController>().FadeInFromColor(2);
@@ -123,6 +127,30 @@ public class GameManager : Singleton<GameManager>
     public void RefreshCultPoints()
     {
         UIManager.Instance.SetText("TxtCultPoints", "Cult Points: " + currentCultPoints);
+    }
+
+    public void StartGame()
+    {
+        gameStarted = true;
+        StartCoroutine(StartGameRoutine());
+    }
+
+    IEnumerator StartGameRoutine()
+    {
+        RoomManager.Instance.MoveToRoom(RoomManager.ROOM_PET);
+        yield return new WaitForSeconds(1.5f);
+
+        GameObject obj = UIManager.Instance.FindInCanvas("Stats");
+        obj.SetActive(true);
+        obj.GetComponent<CanvasGroup>().alpha = 0;
+
+        LTDescr tween = LeanTween.value(obj, 0, 1, 1.0f);
+
+        tween.setOnUpdate((float alpha) =>
+        {
+            obj.GetComponent<CanvasGroup>().alpha = alpha;
+        });
+
     }
 
 }

@@ -9,7 +9,7 @@ public class RoomManager : Singleton<RoomManager>
 
     public const int ROOM_PET = 0;
     public const int ROOM_CULT = 1;
-    public const int ROOM_GARDEN = 2;
+    public const int ROOM_MENU = 2;
     public const int ROOM_BED = 3;
 
     public int currentRoom;
@@ -23,16 +23,16 @@ public class RoomManager : Singleton<RoomManager>
 
     void Start()
     {
-        currentRoom = ROOM_PET;
+        currentRoom = ROOM_MENU;
         roomUI.Add(UIManager.Instance.FindInCanvas("PetRoom"));
         roomUI.Add(UIManager.Instance.FindInCanvas("CultRoom"));
-        roomUI.Add(UIManager.Instance.FindInCanvas("BedRoom"));
+        roomUI.Add(UIManager.Instance.FindInCanvas("MenuRoom"));
         roomUI.Add(UIManager.Instance.FindInCanvas("GardenRoom"));
     }
 
     void Update()
     {
-        if (canMove)
+        if (GameManager.Instance.gameStarted)
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
@@ -61,8 +61,9 @@ public class RoomManager : Singleton<RoomManager>
             currentRoom = ROOM_PET;
     }
 
-    void MoveToRoom(int room)
+    public void MoveToRoom(int room)
     {
+        currentRoom = room;
         canMove = false;
         float to = room * 90;
         LeanTween.cancel(Camera.main.gameObject);

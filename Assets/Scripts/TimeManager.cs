@@ -20,9 +20,12 @@ public class TimeManager : Singleton<TimeManager>
 
     void Update()
     {
-        if (Time.time - lastHour >= GameManager.Instance.balance.hourDuration)
+        if (GameManager.Instance.gameStarted)
         {
-            HourPassed();
+            if (Time.time - lastHour >= GameManager.Instance.balance.hourDuration)
+            {
+                HourPassed();
+            }
         }
     }
 

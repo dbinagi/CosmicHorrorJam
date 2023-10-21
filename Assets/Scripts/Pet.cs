@@ -60,19 +60,22 @@ public class Pet : MonoBehaviour
 
     void Update()
     {
-        if (Time.time - lastBlink >= blinkCD)
+        if (GameManager.Instance.gameStarted)
         {
-            Blink();
-        }
+            if (Time.time - lastBlink >= blinkCD)
+            {
+                Blink();
+            }
 
-        if (Time.time - lastHunger >= hungerCD)
-        {
-            Hunger();
-        }
+            if (Time.time - lastHunger >= hungerCD)
+            {
+                Hunger();
+            }
 
-        if (Time.time - lastPoop >= poopCD)
-        {
-            Poop();
+            if (Time.time - lastPoop >= poopCD)
+            {
+                Poop();
+            }
         }
     }
 
