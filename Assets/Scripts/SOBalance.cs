@@ -70,4 +70,8 @@ public class SOBalance : ScriptableObject
     public float initialHumanCost;
     public float costIncreasePerPurchase;
 
+    [Header("Plant")]
+    public float maxWaterForPlant;
+    public float waterPerDrop;
+
 }
