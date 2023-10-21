@@ -4,6 +4,7 @@ using UnityEngine;
 using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
 using UnityEngine.UI;
+using TurtleGames.Framework.Runtime.Audio;
 
 public class RoomPet : Singleton<RoomPet>
 {
@@ -34,6 +35,7 @@ public class RoomPet : Singleton<RoomPet>
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodHumanValue);
         CloseFoodSelector();
         GameManager.Instance.humanAmount -= 1;
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterEatMeat");
     }
 
     public void FeedVegetables()
@@ -41,6 +43,7 @@ public class RoomPet : Singleton<RoomPet>
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodVegetablesValue);
         CloseFoodSelector();
         GameManager.Instance.vegAmount -= 1;
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterEatVegetables");
     }
 
     void OpenFoodSelector()

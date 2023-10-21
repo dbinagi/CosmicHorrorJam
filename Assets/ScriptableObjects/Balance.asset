@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9dea9b74b708b3489ea313065d9d59c, type: 3}
   m_Name: Balance
   m_EditorClassIdentifier: 
-  hourDuration: 2
+  hourDuration: 5
   daysForEnd: 9
   petMaxHunger: 100
   petMaxWellbeing: 100
   maxCultPointsPerPoop: 10
   minCultPointsPerPoop: 20
+  wellbeingCheckForPoopAroungMinCooldown: 1
+  wellbeingCheckForPoopAroungMaxCooldown: 1
   hungerMaxCooldownLevel0: 4
   hungerMinCooldownLevel0: 4
   hungerLossMinLevel0: 3
@@ -26,6 +28,8 @@ MonoBehaviour:
   poopMinCooldownLevel0: 5
   wellbeingMinLossPerNotPoopLevel0: 5
   wellbeingMaxLossPerNotPoopLevel0: 10
+  wellbeingMinLossPerPoopLevel0: 5
+  wellbeingMaxLossPerPoopLevel0: 5
   daysForLevel1: 3
   hungerMaxCooldownLevel1: 4
   hungerMinCooldownLevel1: 4
@@ -35,6 +39,8 @@ MonoBehaviour:
   poopMinCooldownLevel1: 5
   wellbeingMinLossPerNotPoopLevel1: 5
   wellbeingMaxLossPerNotPoopLevel1: 10
+  wellbeingMinLossPerPoopLevel1: 5
+  wellbeingMaxLossPerPoopLevel1: 5
   daysForLevel2: 6
   hungerMaxCooldownLevel2: 4
   hungerMinCooldownLevel2: 4
@@ -44,6 +50,8 @@ MonoBehaviour:
   poopMinCooldownLevel2: 5
   wellbeingMinLossPerNotPoopLevel2: 5
   wellbeingMaxLossPerNotPoopLevel2: 10
+  wellbeingMinLossPerPoopLevel2: 5
+  wellbeingMaxLossPerPoopLevel2: 5
   foodRatValue: 20
   foodVegetablesValue: 10
   foodHumanValue: 50

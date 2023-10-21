@@ -1,4 +1,5 @@
 using System.Collections;
+using TurtleGames.Framework.Runtime.Audio;
 using TurtleGames.Framework.Runtime.Camera;
 using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
@@ -36,6 +37,9 @@ public class GameManager : Singleton<GameManager>
         currentCultPoints = 0;
         RefreshCultPoints();
         Camera.main.GetComponent<CameraController>().FadeInFromColor(2);
+        AudioManager.Instance.FadeIn("eldrichPet_music_startLoop");
+        Sound startLoop = AudioManager.Instance.GetSound("eldrichPet_music_startLoop");
+        StartCoroutine(StartEnd(startLoop.source));
     }
 
     void Update()
@@ -50,6 +54,7 @@ public class GameManager : Singleton<GameManager>
                 {
                     ratAmount += 1;
                     Destroy(rat.gameObject);
+                    AudioManager.Instance.PlayRandomInGroup("eldritchpet_sfx_ratPickup");
                 }
                 PoopSlot poop = hit.Value.transform.GetComponent<PoopSlot>();
                 if (poop != null)
@@ -57,6 +62,7 @@ public class GameManager : Singleton<GameManager>
                     poop.TakePoop();
                     currentCultPoints += Random.Range(balance.minCultPointsPerPoop, balance.maxCultPointsPerPoop);
                     RefreshCultPoints();
+                    AudioManager.Instance.PlayOneShot("eldritchpet_sfx_pickupCaca");
                 }
                 Plant plant = hit.Value.transform.GetComponent<Plant>();
                 if (plant != null)
@@ -65,6 +71,7 @@ public class GameManager : Singleton<GameManager>
                     {
                         plant.Take();
                         vegAmount++;
+                        AudioManager.Instance.PlayRandomInGroup("eldritchpet_sfx_vegetablePickup");
                     }
                 }
             }
@@ -151,6 +158,24 @@ public class GameManager : Singleton<GameManager>
             obj.GetComponent<CanvasGroup>().alpha = alpha;
         });
 
+    }
+
+    IEnumerator StartEnd(AudioSource source)
+    {
+        yield return new WaitForSeconds(114.8f);
+        AudioManager.Instance.Play("eldritchPet_music_mainLoop", false, 1, 0.5f, true);
+    }
+
+    public void GameEndingLevel3Reached()
+    {
+        StartCoroutine(StartGameEndingLevel3Reached());
+    }
+
+    IEnumerator StartGameEndingLevel3Reached()
+    {
+        Camera.main.GetComponent<CameraController>().FadeOutToColor(1);
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(1);
     }
 
 }

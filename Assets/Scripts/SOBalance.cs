@@ -12,6 +12,9 @@ public class SOBalance : ScriptableObject
     public int maxCultPointsPerPoop;
     public int minCultPointsPerPoop;
 
+    public int wellbeingCheckForPoopAroungMinCooldown;
+    public int wellbeingCheckForPoopAroungMaxCooldown;
+
     [Header("Level 0")]
     public float hungerMaxCooldownLevel0;
     public float hungerMinCooldownLevel0;
@@ -24,6 +27,9 @@ public class SOBalance : ScriptableObject
 
     public int wellbeingMinLossPerNotPoopLevel0;
     public int wellbeingMaxLossPerNotPoopLevel0;
+
+    public int wellbeingMinLossPerPoopLevel0;
+    public int wellbeingMaxLossPerPoopLevel0;
 
     [Header("Level 1")]
 
@@ -40,6 +46,9 @@ public class SOBalance : ScriptableObject
     public int wellbeingMinLossPerNotPoopLevel1;
     public int wellbeingMaxLossPerNotPoopLevel1;
 
+    public int wellbeingMinLossPerPoopLevel1;
+    public int wellbeingMaxLossPerPoopLevel1;
+
     [Header("Level 2")]
 
     public int daysForLevel2;
@@ -54,6 +63,9 @@ public class SOBalance : ScriptableObject
 
     public int wellbeingMinLossPerNotPoopLevel2;
     public int wellbeingMaxLossPerNotPoopLevel2;
+
+    public int wellbeingMinLossPerPoopLevel2;
+    public int wellbeingMaxLossPerPoopLevel2;
 
     [Header("Food")]
     public float foodRatValue;

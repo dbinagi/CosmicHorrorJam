@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed53ebbd131708d41acc031a3be90ca7, type: 3}
+  m_Name: AudioConfig
+  m_EditorClassIdentifier: 
+  DefaultVolume: 0.5
+  DefaultPitch: 1
+  DefaultFade: 1
+  Sounds:
+  - Name: eldrichPet_music_startLoop
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: a169570c08f6d85459ea4245c305b67f, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchPet_music_mainLoop
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 1
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: ee4b5f56740b3a747a83fb22a46a2d53, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_monsterEatMeat
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: fee60159614a0134893a911744cf5402, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_monsterEatVegetables
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 48947f2826c1d924a919f4aeb4be0823, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_ratPickup
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: e81f05560ae469f4cb98955778fea8bc, type: 3}
+    - {fileID: 8300000, guid: ad4231ce3ccd29f4999140b091778618, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_vegetablePickup
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: f47c45b3818177f46afd451e4e95ad4b, type: 3}
+    - {fileID: 8300000, guid: e11bdb07737eeec4a87a94424aae1bb0, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_monsterSpawnCaca
+    Volume: 0.6
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 4091a96cb632d954e8fdde5299b0d1ab, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_pickupCaca
+    Volume: 1
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: eea9cf6949d2c1640b6818e6ed94642e, type: 3}
+    source: {fileID: 0}

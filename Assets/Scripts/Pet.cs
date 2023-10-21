@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TurtleGames.Framework.Runtime.Audio;
 using TurtleGames.Framework.Runtime.Camera;
 using TurtleGames.Framework.Runtime.UI;
 using UnityEngine;
@@ -40,6 +41,9 @@ public class Pet : MonoBehaviour
 
     float currentWellbeing;
 
+    float wellbeingLossPerPoopCD;
+    float lastWellbeingLossPerPoopCheck;
+
     #region Unity Functions
 
     void Awake()
@@ -56,6 +60,10 @@ public class Pet : MonoBehaviour
         sliderWellbeing.GetComponent<Slider>().maxValue = currentHunger;
 
         poopCD = Random.Range(GameManager.Instance.balance.poopMinCooldownLevel0, GameManager.Instance.balance.poopMinCooldownLevel0);
+
+        wellbeingLossPerPoopCD = Random.Range(GameManager.Instance.balance.wellbeingCheckForPoopAroungMinCooldown, GameManager.Instance.balance.wellbeingCheckForPoopAroungMinCooldown);
+        lastWellbeingLossPerPoopCheck = Time.time;
+
     }
 
     void Update()
@@ -76,6 +84,11 @@ public class Pet : MonoBehaviour
             {
                 Poop();
             }
+
+            if (Time.time - lastWellbeingLossPerPoopCheck >= wellbeingLossPerPoopCD)
+            {
+                CheckWellbeingPoopAround();
+            }
         }
     }
 
@@ -87,6 +100,7 @@ public class Pet : MonoBehaviour
     {
         animator.SetTrigger("Eat");
         poopStack.Push(1);
+        lastPoop = Time.time;
 
         currentHunger = Mathf.Clamp(currentHunger + food, 0, GameManager.Instance.balance.petMaxHunger);
         GameObject slider = UIManager.Instance.FindInCanvas("SliderHunger");
@@ -95,6 +109,11 @@ public class Pet : MonoBehaviour
 
     public void SetLevel(int level)
     {
+        if (level == 3)
+        {
+            GameManager.Instance.GameEndingLevel3Reached();
+            return;
+        }
         currentLevel = level;
         Camera.main.GetComponent<CameraController>().FadeOutToColor(0.1f);
         StartCoroutine(ChangeSprite());
@@ -174,6 +193,11 @@ public class Pet : MonoBehaviour
         }
         int amount = poopStack.Pop();
 
+        animator.SetTrigger("Poop");
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterSpawnCaca");
+
+        lastWellbeingLossPerPoopCheck = Time.time; // Wait to check wellbeing
+
         bool couldPoop = false;
 
         switch (currentLevel)
@@ -240,6 +264,38 @@ public class Pet : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    void CheckWellbeingPoopAround()
+    {
+        lastWellbeingLossPerPoopCheck = Time.time;
+
+        int poopCounter = 0;
+        foreach (PoopSlot slot in poopPositions)
+        {
+            if (!slot.isEmpty)
+            {
+                poopCounter++;
+            }
+        }
+
+        if (poopCounter == 0)
+            return;
+
+        float wellbeingLost = Random.Range(GameManager.Instance.balance.wellbeingMinLossPerPoopLevel0, GameManager.Instance.balance.wellbeingMaxLossPerPoopLevel0);
+        wellbeingLossPerPoopCD = Random.Range(GameManager.Instance.balance.wellbeingCheckForPoopAroungMinCooldown, GameManager.Instance.balance.wellbeingCheckForPoopAroungMinCooldown);
+        switch (currentLevel)
+        {
+            case 1:
+                wellbeingLost = Random.Range(GameManager.Instance.balance.wellbeingMinLossPerPoopLevel1, GameManager.Instance.balance.wellbeingMaxLossPerPoopLevel1);
+                break;
+            case 2:
+                wellbeingLost = Random.Range(GameManager.Instance.balance.wellbeingMinLossPerPoopLevel2, GameManager.Instance.balance.wellbeingMaxLossPerPoopLevel2);
+                break;
+        }
+        currentWellbeing -= wellbeingLost * poopCounter;
+        GameObject sliderWellbeing = UIManager.Instance.FindInCanvas("SliderWellbeing");
+        sliderWellbeing.GetComponent<Slider>().value = currentWellbeing;
     }
 
     // Método para mezclar aleatoriamente una lista
