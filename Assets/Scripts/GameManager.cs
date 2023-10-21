@@ -20,6 +20,9 @@ public class GameManager : Singleton<GameManager>
     public int humanAmount;
 
     [SerializeField]
+    public int vegAmount;
+
+    [SerializeField]
     public int currentCultPoints;
 
     public int totalHumanPurchases;
@@ -50,6 +53,15 @@ public class GameManager : Singleton<GameManager>
                     poop.TakePoop();
                     currentCultPoints += Random.Range(balance.minCultPointsPerPoop, balance.maxCultPointsPerPoop);
                     RefreshCultPoints();
+                }
+                Plant plant = hit.Value.transform.GetComponent<Plant>();
+                if (plant != null)
+                {
+                    if (plant.currentStage == Plant.STAGE_READY)
+                    {
+                        plant.Take();
+                        vegAmount++;
+                    }
                 }
             }
         }

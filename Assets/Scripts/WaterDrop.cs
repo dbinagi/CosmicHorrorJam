@@ -36,7 +36,7 @@ public class WaterDrop : MonoBehaviour
         transform.position = nuevaPosicion;
 
         // Reiniciar la gota si sale de la vista de la cámara
-        if (nuevaPosicion.y < -Camera.main.orthographicSize)
+        if (nuevaPosicion.y <= 0)
         {
             Destroy(this.gameObject);
             //     ReiniciarGota();

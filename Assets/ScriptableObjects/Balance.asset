@@ -53,5 +53,5 @@ MonoBehaviour:
   RatSpeedLevel2: 5
   initialHumanCost: 5
   costIncreasePerPurchase: 1
-  maxWaterForPlant: 200
+  maxWaterForPlant: 1000
   waterPerDrop: 0.5

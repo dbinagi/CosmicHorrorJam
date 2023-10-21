@@ -19,12 +19,4 @@ public class RoomGarden : MonoBehaviour
 
     }
 
-    public void OnPlantClick()
-    {
-        foreach (Plant p in plants)
-        {
-            p.PutPlant();
-        }
-    }
-
 }
