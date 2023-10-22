@@ -68,7 +68,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -122,7 +122,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3132
+        y: 2088
         width: 1315
         height: 1044
       alignment: 0
@@ -143,7 +143,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1315
-        y: 3132
+        y: 2088
         width: 1315
         height: 1044
       alignment: 0
@@ -164,7 +164,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2630
-        y: 3132
+        y: 2088
         width: 1315
         height: 1044
       alignment: 0
@@ -184,8 +184,8 @@ TextureImporter:
       name: pet2_blink_1315x1044_3
       rect:
         serializedVersion: 2
-        x: 3945
-        y: 3132
+        x: 0
+        y: 1044
         width: 1315
         height: 1044
       alignment: 0
@@ -205,8 +205,8 @@ TextureImporter:
       name: pet2_blink_1315x1044_4
       rect:
         serializedVersion: 2
-        x: 5260
-        y: 3132
+        x: 1315
+        y: 1044
         width: 1315
         height: 1044
       alignment: 0
@@ -226,8 +226,8 @@ TextureImporter:
       name: pet2_blink_1315x1044_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2088
+        x: 2630
+        y: 1044
         width: 1315
         height: 1044
       alignment: 0
@@ -247,8 +247,8 @@ TextureImporter:
       name: pet2_blink_1315x1044_6
       rect:
         serializedVersion: 2
-        x: 1315
-        y: 2088
+        x: 0
+        y: 0
         width: 1315
         height: 1044
       alignment: 0
@@ -268,8 +268,8 @@ TextureImporter:
       name: pet2_blink_1315x1044_7
       rect:
         serializedVersion: 2
-        x: 2630
-        y: 2088
+        x: 1315
+        y: 0
         width: 1315
         height: 1044
       alignment: 0
@@ -289,8 +289,8 @@ TextureImporter:
       name: pet2_blink_1315x1044_8
       rect:
         serializedVersion: 2
-        x: 3945
-        y: 2088
+        x: 2630
+        y: 0
         width: 1315
         height: 1044
       alignment: 0
@@ -306,237 +306,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_9
-      rect:
-        serializedVersion: 2
-        x: 5260
-        y: 2088
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a54c19ecd9b92c488d94ce68fd09113
-      internalID: -492117992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1044
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 940b8b519ee34f64a83fbab17d7d2fa5
-      internalID: 1896806329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_11
-      rect:
-        serializedVersion: 2
-        x: 1315
-        y: 1044
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87e5bead266179a4abd8532640506bc6
-      internalID: 1105245676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_12
-      rect:
-        serializedVersion: 2
-        x: 2630
-        y: 1044
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 538f5ebbf92777b4d8b8463bcc4adc4c
-      internalID: -1920849965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_13
-      rect:
-        serializedVersion: 2
-        x: 3945
-        y: 1044
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ac66ae3488621d4da1deb7f073036d2
-      internalID: -1486937166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_14
-      rect:
-        serializedVersion: 2
-        x: 5260
-        y: 1044
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 141ebd8abf16dad4a86d5f87562ef9f9
-      internalID: 1234502593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d97b446bd62a7944599c56c82d9b0a73
-      internalID: 525239055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_16
-      rect:
-        serializedVersion: 2
-        x: 1315
-        y: 0
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1e346cbc5ca6bc4bb25ccc92c4df072
-      internalID: -549025065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_17
-      rect:
-        serializedVersion: 2
-        x: 2630
-        y: 0
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7493efe31619c5f488c8c5adafccbf2a
-      internalID: -562973816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_18
-      rect:
-        serializedVersion: 2
-        x: 3945
-        y: 0
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa03075f72861364c9f665c3d54bf6d5
-      internalID: 1021196516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet2_blink_1315x1044_19
-      rect:
-        serializedVersion: 2
-        x: 5260
-        y: 0
-        width: 1315
-        height: 1044
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bcb602252d0b15478f3a37edf23c501
-      internalID: 1533902822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -548,26 +317,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pet2_blink_1315x1044_12: -1920849965
-      pet2_blink_1315x1044_9: -492117992
-      pet2_blink_1315x1044_16: -549025065
       pet2_blink_1315x1044_3: -1646807590
-      pet2_blink_1315x1044_19: 1533902822
-      pet2_blink_1315x1044_17: -562973816
-      pet2_blink_1315x1044_10: 1896806329
       pet2_blink_1315x1044_4: -191293103
-      pet2_blink_1315x1044_15: 525239055
       pet2_blink_1315x1044_8: -1712758379
-      pet2_blink_1315x1044_13: -1486937166
       pet2_blink_1315x1044_2: -1697018227
       pet2_blink_1315x1044_7: 1272772665
       pet2_blink_1315x1044_5: 1776762666
-      pet2_blink_1315x1044_14: 1234502593
       pet2_blink_1315x1044_1: 190270800
-      pet2_blink_1315x1044_18: 1021196516
       pet2_blink_1315x1044_6: 2040530121
       pet2_blink_1315x1044_0: -1225199842
-      pet2_blink_1315x1044_11: 1105245676
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

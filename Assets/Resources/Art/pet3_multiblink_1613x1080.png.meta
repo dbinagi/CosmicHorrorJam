@@ -68,8 +68,8 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -1190,15 +1190,15 @@ TextureImporter:
       pet3_multiblink_1613x1080_38: 1993674
       pet3_multiblink_1613x1080_28: -2138184505
       pet3_multiblink_1613x1080_4: -1977557104
+      pet3_multiblink_1613x1080_47: 529082469
       pet3_multiblink_1613x1080_7: 1346241642
-      pet3_multiblink_1613x1080_30: 1982704442
       pet3_multiblink_1613x1080_33: 562787471
+      pet3_multiblink_1613x1080_30: 1982704442
       pet3_multiblink_1613x1080_8: 1955148639
       pet3_multiblink_1613x1080_14: -1509804478
-      pet3_multiblink_1613x1080_42: 606246209
       pet3_multiblink_1613x1080_44: 1618850262
       pet3_multiblink_1613x1080_22: 1111541136
-      pet3_multiblink_1613x1080_47: 529082469
+      pet3_multiblink_1613x1080_42: 606246209
       pet3_multiblink_1613x1080_26: 1479213853
       pet3_multiblink_1613x1080_9: 1229613759
       pet3_multiblink_1613x1080_15: 1517907798

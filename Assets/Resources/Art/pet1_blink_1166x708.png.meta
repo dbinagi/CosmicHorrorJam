@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c10d1ce54b1d944980017694eb99ae5
+guid: 5e97c46af4f40b6488a27283b1b80d22
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -102,29 +102,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pet2_eat_1315x1044_0
+      name: pet1_blink_1166x708_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2088
-        width: 1315
-        height: 1044
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +120,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 278764107141b944097609f760b516a7
-      internalID: 1899838355
+      spriteID: 527b3b913c5e5aa4a8f5dce704bf3c1a
+      internalID: 546906288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pet2_eat_1315x1044_1
+      name: pet1_blink_1166x708_1
       rect:
         serializedVersion: 2
-        x: 1315
-        y: 2088
-        width: 1315
-        height: 1044
+        x: 1166
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f418db313956fd4286bce56d700b2e5
-      internalID: -902766762
+      spriteID: 79a8b3cce127f2b4b9bbedb8bf914267
+      internalID: 2141329241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pet2_eat_1315x1044_2
+      name: pet1_blink_1166x708_2
       rect:
         serializedVersion: 2
-        x: 2630
-        y: 2088
-        width: 1315
-        height: 1044
+        x: 2332
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 764c2c910845f9740a0a59a955f80c2f
-      internalID: 332806278
+      spriteID: 08f2a651b1a632943bab69c1e1601f81
+      internalID: -846401310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pet2_eat_1315x1044_3
+      name: pet1_blink_1166x708_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 1044
-        width: 1315
-        height: 1044
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f188d571471aa634fbca8b9c591fbe40
-      internalID: -1614479455
+      spriteID: 2c73867ad87cb0e4891eca0b87551907
+      internalID: -407795665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pet2_eat_1315x1044_4
+      name: pet1_blink_1166x708_4
       rect:
         serializedVersion: 2
-        x: 1315
-        y: 1044
-        width: 1315
-        height: 1044
+        x: 1166
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e83bff9447a0f76428a9e9fc27800373
-      internalID: 705045386
+      spriteID: d9294de7f03a325409a08da0e9688add
+      internalID: 171953672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pet2_eat_1315x1044_5
+      name: pet1_blink_1166x708_5
       rect:
         serializedVersion: 2
-        x: 2630
-        y: 1044
-        width: 1315
-        height: 1044
+        x: 2332
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 922f6d26d3a9dd7418792bb686a8a896
-      internalID: 421036957
+      spriteID: 20306daf5a321d448a929295537d302b
+      internalID: -1986346134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pet2_eat_1315x1044_6
+      name: pet1_blink_1166x708_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1315
-        height: 1044
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,8 +246,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e99463b8b14d4d40ac3c247cfc51cef
-      internalID: -1338687612
+      spriteID: 9f18df66f5fad4b49ae46245d35ad7e3
+      internalID: -804732318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet1_blink_1166x708_7
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 0
+        width: 1166
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247d991ab44ceb341a7b1768fbfe7e27
+      internalID: -988668557
       vertices: []
       indices: 
       edges: []
@@ -267,7 +276,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4fa22faf18282bc409d47f29e276ceca
     internalID: 0
     vertices: []
     indices: 
@@ -275,13 +284,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pet2_eat_1315x1044_2: 332806278
-      pet2_eat_1315x1044_3: -1614479455
-      pet2_eat_1315x1044_6: -1338687612
-      pet2_eat_1315x1044_4: 705045386
-      pet2_eat_1315x1044_1: -902766762
-      pet2_eat_1315x1044_5: 421036957
-      pet2_eat_1315x1044_0: 1899838355
+      pet1_blink_1166x708_1: 2141329241
+      pet1_blink_1166x708_5: -1986346134
+      pet1_blink_1166x708_3: -407795665
+      pet1_blink_1166x708_4: 171953672
+      pet1_blink_1166x708_7: -988668557
+      pet1_blink_1166x708_0: 546906288
+      pet1_blink_1166x708_2: -846401310
+      pet1_blink_1166x708_6: -804732318
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

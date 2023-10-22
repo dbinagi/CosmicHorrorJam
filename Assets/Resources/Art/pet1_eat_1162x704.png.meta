@@ -68,7 +68,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -122,9 +122,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3520
-        width: 1162
-        height: 704
+        y: 2124
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +142,10 @@ TextureImporter:
       name: pet1_eat_1162x704_1
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 3520
-        width: 1162
-        height: 704
+        x: 1166
+        y: 2124
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: pet1_eat_1162x704_2
       rect:
         serializedVersion: 2
-        x: 2324
-        y: 3520
-        width: 1162
-        height: 704
+        x: 2332
+        y: 2124
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: pet1_eat_1162x704_3
       rect:
         serializedVersion: 2
-        x: 3486
-        y: 3520
-        width: 1162
-        height: 704
+        x: 3498
+        y: 2124
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: pet1_eat_1162x704_4
       rect:
         serializedVersion: 2
-        x: 4648
-        y: 3520
-        width: 1162
-        height: 704
+        x: 4664
+        y: 2124
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: pet1_eat_1162x704_5
       rect:
         serializedVersion: 2
-        x: 5810
-        y: 3520
-        width: 1162
-        height: 704
+        x: 0
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: pet1_eat_1162x704_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2816
-        width: 1162
-        height: 704
+        x: 1166
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: pet1_eat_1162x704_7
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 2816
-        width: 1162
-        height: 704
+        x: 2332
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: pet1_eat_1162x704_8
       rect:
         serializedVersion: 2
-        x: 2324
-        y: 2816
-        width: 1162
-        height: 704
+        x: 3498
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: pet1_eat_1162x704_9
       rect:
         serializedVersion: 2
-        x: 3486
-        y: 2816
-        width: 1162
-        height: 704
+        x: 4664
+        y: 1416
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: pet1_eat_1162x704_10
       rect:
         serializedVersion: 2
-        x: 4648
-        y: 2816
-        width: 1162
-        height: 704
+        x: 0
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: pet1_eat_1162x704_11
       rect:
         serializedVersion: 2
-        x: 5810
-        y: 2816
-        width: 1162
-        height: 704
+        x: 1166
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: pet1_eat_1162x704_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2112
-        width: 1162
-        height: 704
+        x: 2332
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +394,10 @@ TextureImporter:
       name: pet1_eat_1162x704_13
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 2112
-        width: 1162
-        height: 704
+        x: 3498
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +415,10 @@ TextureImporter:
       name: pet1_eat_1162x704_14
       rect:
         serializedVersion: 2
-        x: 2324
-        y: 2112
-        width: 1162
-        height: 704
+        x: 4664
+        y: 708
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +436,10 @@ TextureImporter:
       name: pet1_eat_1162x704_15
       rect:
         serializedVersion: 2
-        x: 3486
-        y: 2112
-        width: 1162
-        height: 704
+        x: 0
+        y: 0
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: pet1_eat_1162x704_16
       rect:
         serializedVersion: 2
-        x: 4648
-        y: 2112
-        width: 1162
-        height: 704
+        x: 1166
+        y: 0
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: pet1_eat_1162x704_17
       rect:
         serializedVersion: 2
-        x: 5810
-        y: 2112
-        width: 1162
-        height: 704
+        x: 2332
+        y: 0
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +499,10 @@ TextureImporter:
       name: pet1_eat_1162x704_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1408
-        width: 1162
-        height: 704
+        x: 3498
+        y: 0
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,10 +520,10 @@ TextureImporter:
       name: pet1_eat_1162x704_19
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 1408
-        width: 1162
-        height: 704
+        x: 4664
+        y: 0
+        width: 1166
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,342 +533,6 @@ TextureImporter:
       bones: []
       spriteID: 1abbe1320d8647e4ca0bcfda27526c29
       internalID: 250365699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_20
-      rect:
-        serializedVersion: 2
-        x: 2324
-        y: 1408
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2df5bd870eafb8a47ba95ca3cae054c4
-      internalID: 485113309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_21
-      rect:
-        serializedVersion: 2
-        x: 3486
-        y: 1408
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c36da494423a3f9489b449198eed9abb
-      internalID: -535025992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_22
-      rect:
-        serializedVersion: 2
-        x: 4648
-        y: 1408
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e797d30fedf9a4499d0dd7cb321bb35
-      internalID: -1411327105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_23
-      rect:
-        serializedVersion: 2
-        x: 5810
-        y: 1408
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0311ed269f622f4e8598b00b9bfd4e0
-      internalID: 1238461389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 704
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e8141af9a6c2b74f8d9dca11db5e4de
-      internalID: -849607217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_25
-      rect:
-        serializedVersion: 2
-        x: 1162
-        y: 704
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c843bc8b9d71a945a6456070b82d6a2
-      internalID: -1110278920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_26
-      rect:
-        serializedVersion: 2
-        x: 2324
-        y: 704
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f115970eae70935489e6e7a0baec4a0e
-      internalID: 1919355314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_27
-      rect:
-        serializedVersion: 2
-        x: 3486
-        y: 704
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a18b060cafee3d7468e4074ebeedaf3a
-      internalID: 763299677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_28
-      rect:
-        serializedVersion: 2
-        x: 4648
-        y: 704
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 067ae2c55207bb84f9a44d2704cdb75f
-      internalID: -1201628986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_29
-      rect:
-        serializedVersion: 2
-        x: 5810
-        y: 704
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fde5d00daf14734d9009469d630f0be
-      internalID: -800389531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_30
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8d188113b03e6641ae4bb260b777e7c
-      internalID: -353259414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_31
-      rect:
-        serializedVersion: 2
-        x: 1162
-        y: 0
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc1aa48b48496f44e98faa4f9d07cc4f
-      internalID: -967169084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_32
-      rect:
-        serializedVersion: 2
-        x: 2324
-        y: 0
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95d67b081b0e3694db21bf6e036fb343
-      internalID: -1013330059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_33
-      rect:
-        serializedVersion: 2
-        x: 3486
-        y: 0
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d86701a49b52f9441bf99793516e0159
-      internalID: 893799032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_34
-      rect:
-        serializedVersion: 2
-        x: 4648
-        y: 0
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b30e40f3cd89ce044aa3c1ae1cd726ec
-      internalID: 1720992582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pet1_eat_1162x704_35
-      rect:
-        serializedVersion: 2
-        x: 5810
-        y: 0
-        width: 1162
-        height: 704
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 281c5cd6d64a1bf4081dae44159cef93
-      internalID: -746158370
       vertices: []
       indices: 
       edges: []
@@ -884,42 +548,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pet1_eat_1162x704_33: 893799032
-      pet1_eat_1162x704_28: -1201628986
-      pet1_eat_1162x704_24: -849607217
       pet1_eat_1162x704_2: -574967745
-      pet1_eat_1162x704_31: -967169084
       pet1_eat_1162x704_6: 2052097420
       pet1_eat_1162x704_10: -2070542914
       pet1_eat_1162x704_12: 1933379812
       pet1_eat_1162x704_0: -584857781
       pet1_eat_1162x704_18: -1423386062
-      pet1_eat_1162x704_29: -800389531
       pet1_eat_1162x704_11: 1530660396
       pet1_eat_1162x704_3: -1758614050
       pet1_eat_1162x704_16: 480681926
-      pet1_eat_1162x704_21: -535025992
       pet1_eat_1162x704_4: -1997300028
-      pet1_eat_1162x704_35: -746158370
-      pet1_eat_1162x704_25: -1110278920
-      pet1_eat_1162x704_26: 1919355314
       pet1_eat_1162x704_14: -826431861
       pet1_eat_1162x704_15: -766219268
-      pet1_eat_1162x704_20: 485113309
-      pet1_eat_1162x704_34: 1720992582
       pet1_eat_1162x704_5: 511034220
       pet1_eat_1162x704_19: 250365699
       pet1_eat_1162x704_17: -2131165293
       pet1_eat_1162x704_9: 193859457
-      pet1_eat_1162x704_22: -1411327105
       pet1_eat_1162x704_1: 1679822151
       pet1_eat_1162x704_8: 1196396054
       pet1_eat_1162x704_13: 769667053
-      pet1_eat_1162x704_23: 1238461389
-      pet1_eat_1162x704_32: -1013330059
-      pet1_eat_1162x704_27: 763299677
       pet1_eat_1162x704_7: -1929617526
-      pet1_eat_1162x704_30: -353259414
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

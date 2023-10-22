@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10487,6 +10487,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 210319989}
     m_Modifications:
+    - target: {fileID: 51368293472866697, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669440545382444565, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6754853598353197659, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
       propertyPath: poopPositions.Array.size
       value: 4
@@ -10507,6 +10515,18 @@ PrefabInstance:
       propertyPath: poopPositions.Array.data[3]
       value: 
       objectReference: {fileID: 1616544073}
+    - target: {fileID: 6986835810785741032, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_Size.x
+      value: 13.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986835810785741032, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_Size.y
+      value: 10.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986835810785741032, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8596673345740529217, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -10558,6 +10578,22 @@ PrefabInstance:
     - target: {fileID: 8625819251105078185, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
       propertyPath: m_Name
       value: Pet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8625819252007320488, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8625819252007320494, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_Size.x
+      value: 11.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8625819252007320494, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_Size.y
+      value: 7.081116
+      objectReference: {fileID: 0}
+    - target: {fileID: 8625819252007320494, guid: c460c1f4a0aa4ea4492fd30165e0d08f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
