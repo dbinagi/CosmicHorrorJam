@@ -145,6 +145,16 @@ public class Pet : MonoBehaviour
 
     void Blink()
     {
+        if (currentLevel == 2)
+        {
+            if (Random.Range(1, 100) <= 20)
+            {
+                animator.SetTrigger("MultiBlink");
+                blinkCD = Random.Range(blinkMinCooldown, blinkMaxCooldown);
+                lastBlink = Time.time;
+                return;
+            }
+        }
         animator.SetTrigger("Blink");
         blinkCD = Random.Range(blinkMinCooldown, blinkMaxCooldown);
         lastBlink = Time.time;

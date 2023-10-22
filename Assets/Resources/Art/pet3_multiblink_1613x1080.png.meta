@@ -1,0 +1,1213 @@
+fileFormatVersion: 2
+guid: 868731cfa6dc662428630db8c935bd02
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6480
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c62b49e7e86cf042bfad6282a9f736f
+      internalID: -1263887719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_1
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 6480
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1744d8cef79d3409f1a91d90f3b9c3
+      internalID: 255383317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_2
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 6480
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c0bc2b793ee1e4394c22d21f51ca42
+      internalID: 124436149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_3
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 6480
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1605aa1b6eef4214e83c1514213cf1be
+      internalID: 1877270175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_4
+      rect:
+        serializedVersion: 2
+        x: 6452
+        y: 6480
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcee533a8dde634c8179132a494d2ac
+      internalID: -1977557104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_5
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 6480
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66533156267d8e44b84d49218fa0089
+      internalID: -164966900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_6
+      rect:
+        serializedVersion: 2
+        x: 9678
+        y: 6480
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75caa4b481c2bce4a8f46496e13153a6
+      internalID: -1782297049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318b556f789f7504ca1e235c68a27673
+      internalID: 1346241642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_8
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 5400
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6272ba69025d86469d5b3a24602772e
+      internalID: 1955148639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_9
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 5400
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f521c1df65f054d4aa43ec4705ca40aa
+      internalID: 1229613759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_10
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 5400
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa48257fad1a204ab97409dc8ea9a56
+      internalID: -933142884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_11
+      rect:
+        serializedVersion: 2
+        x: 6452
+        y: 5400
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223c31855fc092146ba3ecedcb7fefec
+      internalID: 1491079821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_12
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 5400
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a03ab74bf57aeb4096086b81d0414f8
+      internalID: -1259431534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_13
+      rect:
+        serializedVersion: 2
+        x: 9678
+        y: 5400
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fd58f91571d7149bdd2741e16b1e4d
+      internalID: -1990045875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d5726fd44e6594aba93ad2f140cfb2
+      internalID: -1509804478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_15
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 4320
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed52ba54a1b4874f9dce00174261022
+      internalID: 1517907798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_16
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 4320
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c1a0fa396b4bd43846fac66803faf5
+      internalID: -324361506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_17
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 4320
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b16c494024763f4dbf4494ca8c19382
+      internalID: 1303380469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_18
+      rect:
+        serializedVersion: 2
+        x: 6452
+        y: 4320
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c562e039c0bff4faa7747a80b91162
+      internalID: -1524537120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_19
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 4320
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b4d69328d981642947d61cab192f46
+      internalID: 1506569080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_20
+      rect:
+        serializedVersion: 2
+        x: 9678
+        y: 4320
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04c5c0bf7857b740941bac9b5bf93f7
+      internalID: 568132154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220148a0cdbc6944c993c376cf8d669f
+      internalID: -469887754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_22
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 3240
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937e8143f60aebc4e9eceffecf63489a
+      internalID: 1111541136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_23
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 3240
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59ea7ec894fc5545af2dcfe95cdf7c3
+      internalID: -2048910892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_24
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 3240
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0428d91e4f1d2c4f80003f3c631e4e9
+      internalID: 1884479944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_25
+      rect:
+        serializedVersion: 2
+        x: 6452
+        y: 3240
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959b6b4e27677274482d66a7b9a7748a
+      internalID: 2105868504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_26
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 3240
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef46a47835870e548b9cc2448ee394b4
+      internalID: 1479213853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_27
+      rect:
+        serializedVersion: 2
+        x: 9678
+        y: 3240
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad31f6fe3f3568b49962a77434ffaade
+      internalID: 643884199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56effd111c556064fbc85a4e49e0ae80
+      internalID: -2138184505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_29
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 2160
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2e85d5191ace64497ed0b590b82a54
+      internalID: 978264347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_30
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 2160
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969706b70d040c54aa066e6d5d497f36
+      internalID: 1982704442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_31
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 2160
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93c4a1ed1058624684b8f596120eeb9
+      internalID: -1376172998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_32
+      rect:
+        serializedVersion: 2
+        x: 6452
+        y: 2160
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd85d000817f4d4f942866f3efc3428
+      internalID: 821046687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_33
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 2160
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05e971f77100b94c90c9e7c753b1304
+      internalID: 562787471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_34
+      rect:
+        serializedVersion: 2
+        x: 9678
+        y: 2160
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5af0e9b6a52d604895eb94ed2c4e98d
+      internalID: 2042329397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337571cdebb29d6499fecf9ed68ff832
+      internalID: 492309873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_36
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1080
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529da83441d58074c9ac2f2bab841e92
+      internalID: -1906760397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_37
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 1080
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fce3ec519ce1ae4887b2b78cfc9ec2a
+      internalID: -538116195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_38
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 1080
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7365d1b6cef554bb99ab51dea6a299
+      internalID: 1993674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_39
+      rect:
+        serializedVersion: 2
+        x: 6452
+        y: 1080
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f66f08f16e1c4419ac71a8f74352f8
+      internalID: -640402104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_40
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 1080
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f22d59886fc75f48a31cb963e51f367
+      internalID: -1322946130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_41
+      rect:
+        serializedVersion: 2
+        x: 9678
+        y: 1080
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b644a4dbc1f95140b6f5add3e0a815f
+      internalID: -1636696684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d860fcb1e8b164b9fd471a34e83100
+      internalID: 606246209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_43
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 0
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bc1409cf3e9e44eaf55ce83d928066
+      internalID: 660920093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_44
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 0
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b735c496a039f343b067135ae1e5755
+      internalID: 1618850262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_45
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 0
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed526e9aea75ed948b500998cf68b80a
+      internalID: 1951482700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_46
+      rect:
+        serializedVersion: 2
+        x: 6452
+        y: 0
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c61f12a884f324e9d665a04d290821
+      internalID: 1322444177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_47
+      rect:
+        serializedVersion: 2
+        x: 8065
+        y: 0
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7035ddc7c95e2834ab8f8afd8c34d3f2
+      internalID: 529082469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet3_multiblink_1613x1080_48
+      rect:
+        serializedVersion: 2
+        x: 9678
+        y: 0
+        width: 1613
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49be492ac29b5b348bed29d76934e5aa
+      internalID: 2032222950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a3f8d1d4bda9a124eb688e9abaaee7b8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pet3_multiblink_1613x1080_41: -1636696684
+      pet3_multiblink_1613x1080_43: 660920093
+      pet3_multiblink_1613x1080_36: -1906760397
+      pet3_multiblink_1613x1080_35: 492309873
+      pet3_multiblink_1613x1080_45: 1951482700
+      pet3_multiblink_1613x1080_19: 1506569080
+      pet3_multiblink_1613x1080_0: -1263887719
+      pet3_multiblink_1613x1080_1: 255383317
+      pet3_multiblink_1613x1080_31: -1376172998
+      pet3_multiblink_1613x1080_27: 643884199
+      pet3_multiblink_1613x1080_16: -324361506
+      pet3_multiblink_1613x1080_17: 1303380469
+      pet3_multiblink_1613x1080_29: 978264347
+      pet3_multiblink_1613x1080_12: -1259431534
+      pet3_multiblink_1613x1080_21: -469887754
+      pet3_multiblink_1613x1080_39: -640402104
+      pet3_multiblink_1613x1080_34: 2042329397
+      pet3_multiblink_1613x1080_48: 2032222950
+      pet3_multiblink_1613x1080_46: 1322444177
+      pet3_multiblink_1613x1080_18: -1524537120
+      pet3_multiblink_1613x1080_37: -538116195
+      pet3_multiblink_1613x1080_10: -933142884
+      pet3_multiblink_1613x1080_25: 2105868504
+      pet3_multiblink_1613x1080_32: 821046687
+      pet3_multiblink_1613x1080_13: -1990045875
+      pet3_multiblink_1613x1080_2: 124436149
+      pet3_multiblink_1613x1080_11: 1491079821
+      pet3_multiblink_1613x1080_24: 1884479944
+      pet3_multiblink_1613x1080_5: -164966900
+      pet3_multiblink_1613x1080_3: 1877270175
+      pet3_multiblink_1613x1080_38: 1993674
+      pet3_multiblink_1613x1080_28: -2138184505
+      pet3_multiblink_1613x1080_4: -1977557104
+      pet3_multiblink_1613x1080_7: 1346241642
+      pet3_multiblink_1613x1080_30: 1982704442
+      pet3_multiblink_1613x1080_33: 562787471
+      pet3_multiblink_1613x1080_8: 1955148639
+      pet3_multiblink_1613x1080_14: -1509804478
+      pet3_multiblink_1613x1080_42: 606246209
+      pet3_multiblink_1613x1080_44: 1618850262
+      pet3_multiblink_1613x1080_22: 1111541136
+      pet3_multiblink_1613x1080_47: 529082469
+      pet3_multiblink_1613x1080_26: 1479213853
+      pet3_multiblink_1613x1080_9: 1229613759
+      pet3_multiblink_1613x1080_15: 1517907798
+      pet3_multiblink_1613x1080_6: -1782297049
+      pet3_multiblink_1613x1080_20: 568132154
+      pet3_multiblink_1613x1080_40: -1322946130
+      pet3_multiblink_1613x1080_23: -2048910892
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
