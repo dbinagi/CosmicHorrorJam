@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TurtleGames.Framework.Runtime.Audio;
 using UnityEngine;
 
 public class Regadera : MonoBehaviour
@@ -90,6 +91,12 @@ public class Regadera : MonoBehaviour
                 StartCoroutine(DropWater());
             }
 
+            Sound sound = AudioManager.Instance.GetSound("eldritchpet_sfx_waterPlants");
+            if (!sound.source.isPlaying)
+            {
+                AudioManager.Instance.PlayRandomInGroup("eldritchpet_sfx_waterPlants");
+            }
+
         }
 
         IEnumerator DropWater()
@@ -130,6 +137,9 @@ public class Regadera : MonoBehaviour
     {
         // particleSystem.Stop();
         dragging = false;
+
+        Sound sound = AudioManager.Instance.GetSound("eldritchpet_sfx_waterPlants");
+        sound.source.Stop();
     }
 
     RaycastHit? GetMouseRaycastHit()

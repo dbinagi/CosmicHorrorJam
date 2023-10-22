@@ -13,6 +13,7 @@ public class RoomPet : Singleton<RoomPet>
 
     public void OnFeedClick()
     {
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         if (foodSelectorOpen)
         {
             CloseFoodSelector();
@@ -25,6 +26,7 @@ public class RoomPet : Singleton<RoomPet>
 
     public void FeedRat()
     {
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodRatValue);
         CloseFoodSelector();
         GameManager.Instance.ratAmount -= 1;
@@ -32,6 +34,7 @@ public class RoomPet : Singleton<RoomPet>
 
     public void FeedHuman()
     {
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodHumanValue);
         CloseFoodSelector();
         GameManager.Instance.humanAmount -= 1;
@@ -40,6 +43,7 @@ public class RoomPet : Singleton<RoomPet>
 
     public void FeedVegetables()
     {
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodVegetablesValue);
         CloseFoodSelector();
         GameManager.Instance.vegAmount -= 1;
@@ -52,7 +56,7 @@ public class RoomPet : Singleton<RoomPet>
         obj.SetActive(true);
         obj.GetComponent<CanvasGroup>().alpha = 0;
 
-        UIManager.Instance.SetText("TxtRatAmount", "x" + GameManager.Instance.ratAmount + " rats");
+        UIManager.Instance.SetText("TxtRatAmount", "x" + GameManager.Instance.ratAmount);
         if (GameManager.Instance.ratAmount <= 0)
         {
             GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedRat");
@@ -64,7 +68,7 @@ public class RoomPet : Singleton<RoomPet>
             btnRat.GetComponent<Button>().interactable = true;
         }
 
-        UIManager.Instance.SetText("TxtHumanAmount", "x" + GameManager.Instance.humanAmount + " humans");
+        UIManager.Instance.SetText("TxtHumanAmount", "x" + GameManager.Instance.humanAmount);
         if (GameManager.Instance.humanAmount <= 0)
         {
             GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedHuman");
@@ -76,7 +80,7 @@ public class RoomPet : Singleton<RoomPet>
             btnRat.GetComponent<Button>().interactable = true;
         }
 
-        UIManager.Instance.SetText("TxtVegetablesAmount", "x" + GameManager.Instance.vegAmount + " vegetables");
+        UIManager.Instance.SetText("TxtVegetablesAmount", "x" + GameManager.Instance.vegAmount);
         if (GameManager.Instance.vegAmount <= 0)
         {
             GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedVegetables");

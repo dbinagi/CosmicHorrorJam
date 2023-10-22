@@ -20,7 +20,10 @@ public class RoomMenu : MonoBehaviour
     public void OnClickStart()
     {
         if (!GameManager.Instance.gameStarted)
+        {
+            AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
             GameManager.Instance.StartGame();
+        }
     }
 
     public void OnClickRestart()

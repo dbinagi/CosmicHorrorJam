@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
+using TurtleGames.Framework.Runtime.Audio;
 
 public class RoomManager : Singleton<RoomManager>
 {
@@ -50,6 +51,7 @@ public class RoomManager : Singleton<RoomManager>
     void GoLeft()
     {
         currentRoom -= 1;
+        AudioManager.Instance.PlayRandomInGroup("eldritchpet_sfx_uiRoomSwoosh");
         if (currentRoom < 0)
             currentRoom = ROOM_BED;
     }
@@ -57,6 +59,7 @@ public class RoomManager : Singleton<RoomManager>
     void GoRight()
     {
         currentRoom += 1;
+        AudioManager.Instance.PlayRandomInGroup("eldritchpet_sfx_uiRoomSwoosh");
         if (currentRoom > 3)
             currentRoom = ROOM_PET;
     }

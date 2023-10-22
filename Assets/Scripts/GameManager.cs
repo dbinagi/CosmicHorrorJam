@@ -74,6 +74,12 @@ public class GameManager : Singleton<GameManager>
                         AudioManager.Instance.PlayRandomInGroup("eldritchpet_sfx_vegetablePickup");
                     }
                 }
+                HumanBag humanBag = hit.Value.transform.GetComponent<HumanBag>();
+                if (humanBag != null)
+                {
+                    humanAmount++;
+                    humanBag.gameObject.SetActive(false);
+                }
             }
         }
     }
@@ -127,7 +133,7 @@ public class GameManager : Singleton<GameManager>
     {
         totalHumanPurchases++;
         currentCultPoints -= cost;
-        humanAmount++;
+        // humanAmount++;
         RefreshCultPoints();
     }
 

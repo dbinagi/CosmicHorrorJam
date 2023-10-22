@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TurtleGames.Framework.Runtime.Audio;
 using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
 using UnityEngine;
@@ -8,26 +9,35 @@ using UnityEngine.UI;
 public class RoomCult : Singleton<RoomCult>
 {
 
+    [SerializeField]
+    GameObject humanBag;
 
     bool humanSelectorOpen;
 
 
     public void OnBuyHumanSelectorClick()
     {
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         if (humanSelectorOpen)
         {
             CloseHumanSelector();
         }
         else
         {
-            OpenHumanSelector();
+            if (!humanBag.activeSelf)
+                OpenHumanSelector();
         }
     }
 
     public void OnBuyHumanPickClick()
     {
-        GameManager.Instance.BuyHuman(GameManager.Instance.GetHumanCost());
-        CloseHumanSelector();
+        AudioManager.Instance.PlayRandomInGroup("eldritchpet_sfx_buyHuman");
+        if (!humanBag.activeSelf)
+        {
+            GameManager.Instance.BuyHuman(GameManager.Instance.GetHumanCost());
+            CloseHumanSelector();
+            humanBag.SetActive(true);
+        }
     }
 
 

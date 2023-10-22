@@ -114,6 +114,7 @@ public class Pet : MonoBehaviour
             GameManager.Instance.GameEndingLevel3Reached();
             return;
         }
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterLevelUp_op2");
         currentLevel = level;
         Camera.main.GetComponent<CameraController>().FadeOutToColor(0.1f);
         StartCoroutine(ChangeSprite());

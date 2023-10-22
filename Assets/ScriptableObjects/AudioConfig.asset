@@ -106,3 +106,60 @@ MonoBehaviour:
     clips:
     - {fileID: 8300000, guid: eea9cf6949d2c1640b6818e6ed94642e, type: 3}
     source: {fileID: 0}
+  - Name: eldritchpet_sfx_monsterLevelUp_op2
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 3c38310f28ad98a44a1275e5ce163f1a, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_uiClick
+    Volume: 0.864
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 0427878889995a0438ca23744ae7551d, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_uiRoomSwoosh
+    Volume: 0.588
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: deaac32ee2dc2074ea12b83440a6a24f, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_buyHuman
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 7d0156bc6b8800f46aafb0744d0ddce0, type: 3}
+    - {fileID: 8300000, guid: 79b7ecfe92016d3498ad92b1cf9b5d8e, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_waterPlants
+    Volume: 1
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 1
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 6663e97097249514890a1944cc2a7f64, type: 3}
+    - {fileID: 8300000, guid: 2c468cd0c73c8a348810c6bf386ce68b, type: 3}
+    source: {fileID: 0}
