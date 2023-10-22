@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9dea9b74b708b3489ea313065d9d59c, type: 3}
   m_Name: Balance
   m_EditorClassIdentifier: 
-  hourDuration: 5
+  hourDuration: 1
   daysForEnd: 9
   petMaxHunger: 100
   petMaxWellbeing: 100
