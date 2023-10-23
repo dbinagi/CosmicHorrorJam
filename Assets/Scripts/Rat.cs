@@ -21,7 +21,7 @@ public class Rat : MonoBehaviour
     {
         gameObject.transform.rotation = Quaternion.Euler(0, Mathf.Abs(roomSpawned * 90), 0);
         body.Move(this.transform.position + ((this.transform.right * -1) * Time.deltaTime * GameManager.Instance.GetRatSpeed()), Quaternion.identity);
-        if (Time.time - timeSpawned >= 3)
+        if (Time.time - timeSpawned >= 2)
         {
             Destroy(this.gameObject);
         }
