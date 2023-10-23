@@ -12,54 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9dea9b74b708b3489ea313065d9d59c, type: 3}
   m_Name: Balance
   m_EditorClassIdentifier: 
-  hourDuration: 1
-  daysForEnd: 9
+  hourDuration: 2
+  daysForEnd: 10
   petMaxHunger: 100
   petMaxWellbeing: 100
   maxCultPointsPerPoop: 4
   minCultPointsPerPoop: 6
-  wellbeingCheckForPoopAroungMinCooldown: 1
-  wellbeingCheckForPoopAroungMaxCooldown: 1
+  wellbeingCheckForPoopAroungMinCooldown: 2
+  wellbeingCheckForPoopAroungMaxCooldown: 2
   hungerMaxCooldownLevel0: 4
   hungerMinCooldownLevel0: 4
   hungerLossMinLevel0: 3
   hungerLossMaxLevel0: 3
-  poopMaxCooldownLevel0: 5
-  poopMinCooldownLevel0: 5
-  wellbeingMinLossPerNotPoopLevel0: 5
-  wellbeingMaxLossPerNotPoopLevel0: 10
+  poopMaxCooldownLevel0: 6
+  poopMinCooldownLevel0: 10
+  wellbeingMinLossPerNotPoopLevel0: 15
+  wellbeingMaxLossPerNotPoopLevel0: 15
   wellbeingMinLossPerPoopLevel0: 5
   wellbeingMaxLossPerPoopLevel0: 5
-  daysForLevel1: 3
+  daysForLevel1: 4
   hungerMaxCooldownLevel1: 4
   hungerMinCooldownLevel1: 4
-  hungerLossMinLevel1: 5
-  hungerLossMaxLevel1: 5
-  poopMaxCooldownLevel1: 5
-  poopMinCooldownLevel1: 5
-  wellbeingMinLossPerNotPoopLevel1: 10
-  wellbeingMaxLossPerNotPoopLevel1: 10
+  hungerLossMinLevel1: 6
+  hungerLossMaxLevel1: 6
+  poopMaxCooldownLevel1: 6
+  poopMinCooldownLevel1: 10
+  wellbeingMinLossPerNotPoopLevel1: 15
+  wellbeingMaxLossPerNotPoopLevel1: 15
   wellbeingMinLossPerPoopLevel1: 5
   wellbeingMaxLossPerPoopLevel1: 5
-  daysForLevel2: 6
+  daysForLevel2: 7
   hungerMaxCooldownLevel2: 4
   hungerMinCooldownLevel2: 4
-  hungerLossMinLevel2: 8
-  hungerLossMaxLevel2: 8
-  poopMaxCooldownLevel2: 3
-  poopMinCooldownLevel2: 8
-  wellbeingMinLossPerNotPoopLevel2: 5
-  wellbeingMaxLossPerNotPoopLevel2: 10
+  hungerLossMinLevel2: 10
+  hungerLossMaxLevel2: 10
+  poopMaxCooldownLevel2: 6
+  poopMinCooldownLevel2: 10
+  wellbeingMinLossPerNotPoopLevel2: 15
+  wellbeingMaxLossPerNotPoopLevel2: 15
   wellbeingMinLossPerPoopLevel2: 5
   wellbeingMaxLossPerPoopLevel2: 5
-  foodRatValue: 20
+  foodRatValue: 25
   foodVegetablesValue: 10
   foodHumanValue: 50
   RatSpawnCooldown: 20
-  RatSpeedLevel0: 2
+  RatSpeedLevel0: 3
   RatSpeedLevel1: 3
-  RatSpeedLevel2: 5
+  RatSpeedLevel2: 3
   initialHumanCost: 25
-  costIncreasePerPurchase: 5
-  maxWaterForPlant: 850
+  costIncreasePerPurchase: 10
+  maxWaterForPlant: 800
   waterPerDrop: 1
