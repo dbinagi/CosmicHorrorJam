@@ -16,8 +16,8 @@ MonoBehaviour:
   daysForEnd: 9
   petMaxHunger: 100
   petMaxWellbeing: 100
-  maxCultPointsPerPoop: 10
-  minCultPointsPerPoop: 20
+  maxCultPointsPerPoop: 4
+  minCultPointsPerPoop: 6
   wellbeingCheckForPoopAroungMinCooldown: 1
   wellbeingCheckForPoopAroungMaxCooldown: 1
   hungerMaxCooldownLevel0: 4
@@ -37,7 +37,7 @@ MonoBehaviour:
   hungerLossMaxLevel1: 5
   poopMaxCooldownLevel1: 5
   poopMinCooldownLevel1: 5
-  wellbeingMinLossPerNotPoopLevel1: 5
+  wellbeingMinLossPerNotPoopLevel1: 10
   wellbeingMaxLossPerNotPoopLevel1: 10
   wellbeingMinLossPerPoopLevel1: 5
   wellbeingMaxLossPerPoopLevel1: 5
@@ -46,8 +46,8 @@ MonoBehaviour:
   hungerMinCooldownLevel2: 4
   hungerLossMinLevel2: 8
   hungerLossMaxLevel2: 8
-  poopMaxCooldownLevel2: 5
-  poopMinCooldownLevel2: 5
+  poopMaxCooldownLevel2: 3
+  poopMinCooldownLevel2: 8
   wellbeingMinLossPerNotPoopLevel2: 5
   wellbeingMaxLossPerNotPoopLevel2: 10
   wellbeingMinLossPerPoopLevel2: 5
@@ -55,11 +55,11 @@ MonoBehaviour:
   foodRatValue: 20
   foodVegetablesValue: 10
   foodHumanValue: 50
-  RatSpawnCooldown: 10
-  RatSpeedLevel0: 5
-  RatSpeedLevel1: 5
+  RatSpawnCooldown: 20
+  RatSpeedLevel0: 2
+  RatSpeedLevel1: 3
   RatSpeedLevel2: 5
-  initialHumanCost: 5
-  costIncreasePerPurchase: 1
-  maxWaterForPlant: 1000
-  waterPerDrop: 0.5
+  initialHumanCost: 25
+  costIncreasePerPurchase: 5
+  maxWaterForPlant: 850
+  waterPerDrop: 1
