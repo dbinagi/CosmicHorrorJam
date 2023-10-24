@@ -86,4 +86,13 @@ public class SOBalance : ScriptableObject
     public float maxWaterForPlant;
     public float waterPerDrop;
 
+    [Header("Mini Game")]
+    public int miniGameDuration;
+    public int miniGameSliderMax;
+    public float miniGameTimeDecreaseConstant;
+    public float miniGameWellbeingCostForLosing;
+    public float miniGameWellbeingForSuccess;
+    public float miniGameTimeDecreasePerFailure;
+    public float miniGameTimeIncreasePerSuccess;
+
 }

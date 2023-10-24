@@ -63,3 +63,10 @@ MonoBehaviour:
   costIncreasePerPurchase: 10
   maxWaterForPlant: 800
   waterPerDrop: 1
+  miniGameDuration: 61
+  miniGameSliderMax: 500
+  miniGameTimeDecreaseConstant: 0.05
+  miniGameWellbeingCostForLosing: 10
+  miniGameWellbeingForSuccess: 50
+  miniGameTimeDecreasePerFailure: 10
+  miniGameTimeIncreasePerSuccess: 30

@@ -44,6 +44,10 @@ public class Pet : MonoBehaviour
     float wellbeingLossPerPoopCD;
     float lastWellbeingLossPerPoopCheck;
 
+    [SerializeField] GameObject lvl0DialogController;
+    [SerializeField] GameObject lvl1DialogController;
+    [SerializeField] GameObject lvl2DialogController;
+
     #region Unity Functions
 
     void Awake()
@@ -118,6 +122,48 @@ public class Pet : MonoBehaviour
         currentLevel = level;
         Camera.main.GetComponent<CameraController>().FadeOutToColor(0.1f);
         StartCoroutine(ChangeSprite());
+    }
+
+    public int ShowMiniGameSign()
+    {
+        switch (currentLevel)
+        {
+            case 0:
+                if (!lvl0DialogController.activeSelf)
+                {
+                    lvl0DialogController.SetActive(true);
+                    lvl0DialogController.GetComponent<DialogController>().Initialize();
+                }
+                return lvl0DialogController.GetComponent<DialogController>().ShowRandomSign();
+            case 1:
+                if (!lvl1DialogController.activeSelf)
+                {
+                    lvl1DialogController.SetActive(true);
+                    lvl1DialogController.GetComponent<DialogController>().Initialize();
+                }
+                return lvl1DialogController.GetComponent<DialogController>().ShowRandomSign();
+            default:
+                if (!lvl2DialogController.activeSelf)
+                {
+                    lvl2DialogController.SetActive(true);
+                    lvl2DialogController.GetComponent<DialogController>().Initialize();
+                }
+                return lvl2DialogController.GetComponent<DialogController>().ShowRandomSign();
+        }
+    }
+
+    public void HideDialog()
+    {
+        lvl0DialogController.SetActive(false);
+        lvl1DialogController.SetActive(false);
+        lvl2DialogController.SetActive(false);
+    }
+
+    public void LossWellbeing(float amount)
+    {
+        currentWellbeing -= amount;
+        GameObject sliderWellbeing = UIManager.Instance.FindInCanvas("SliderWellbeing");
+        sliderWellbeing.GetComponent<Slider>().value = currentWellbeing;
     }
 
     #endregion

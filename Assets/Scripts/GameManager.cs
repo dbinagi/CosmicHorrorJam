@@ -184,4 +184,13 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadScene(1);
     }
 
+    public void MiniGameFailed()
+    {
+        pet.LossWellbeing(balance.miniGameWellbeingCostForLosing);
+    }
+
+    public void MiniGamePassed()
+    {
+        pet.LossWellbeing(balance.miniGameWellbeingForSuccess * -1);
+    }
 }

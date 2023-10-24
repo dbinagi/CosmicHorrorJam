@@ -24,10 +24,13 @@ public class RatController : Singleton<RatController>
 
     void Update()
     {
-        if (Time.time - lastRat >= GameManager.Instance.balance.RatSpawnCooldown)
+        if (GameManager.Instance.gameStarted)
         {
-            if (RoomManager.Instance.currentRoom != 2)
-                SpawnRat();
+            if (Time.time - lastRat >= GameManager.Instance.balance.RatSpawnCooldown)
+            {
+                if (RoomManager.Instance.currentRoom != 2)
+                    SpawnRat();
+            }
         }
     }
 

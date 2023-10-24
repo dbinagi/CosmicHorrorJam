@@ -24,6 +24,11 @@ public class RoomPet : Singleton<RoomPet>
         }
     }
 
+    public void OnPlayClick()
+    {
+        MiniGameManager.Instance.StartMiniGame();
+    }
+
     public void FeedRat()
     {
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");

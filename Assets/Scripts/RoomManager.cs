@@ -35,12 +35,12 @@ public class RoomManager : Singleton<RoomManager>
     {
         if (GameManager.Instance.gameStarted)
         {
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow)))
             {
                 GoRight();
                 MoveToRoom(currentRoom);
             }
-            else if (Input.GetKeyDown(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow)))
             {
                 GoLeft();
                 MoveToRoom(currentRoom);
