@@ -86,7 +86,12 @@ public class GameManager : Singleton<GameManager>
 
     public void DieByFood()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameEndingLose");
+    }
+
+    public void DieByWellbeing()
+    {
+        SceneManager.LoadScene("GameEndingLose");
     }
 
     public float GetRatSpeed()
