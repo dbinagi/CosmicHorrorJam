@@ -163,3 +163,25 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 6663e97097249514890a1944cc2a7f64, type: 3}
     - {fileID: 8300000, guid: 2c468cd0c73c8a348810c6bf386ce68b, type: 3}
     source: {fileID: 0}
+  - Name: eldritchpet_sfx_minigameCorrect
+    Volume: 0.5
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 5cdbcd25cd8e0a34d8b03b60204f3e25, type: 3}
+    source: {fileID: 0}
+  - Name: eldritchpet_sfx_minigameWrong
+    Volume: 1
+    VolumeVariance: 0
+    Pitch: 1
+    PitchVariance: 0
+    Loop: 0
+    SourceParent: {fileID: 0}
+    SpatialBlend: 0
+    clips:
+    - {fileID: 8300000, guid: 08da16e25c629a147bfd1cbac376caa1, type: 3}
+    source: {fileID: 0}

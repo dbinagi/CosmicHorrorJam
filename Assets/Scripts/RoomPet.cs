@@ -33,27 +33,27 @@ public class RoomPet : Singleton<RoomPet>
     {
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodRatValue);
-        CloseFoodSelector();
         GameManager.Instance.ratAmount -= 1;
+        UpdateButtons();
     }
 
     public void FeedHuman()
     {
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodHumanValue);
-        CloseFoodSelector();
         GameManager.Instance.pet.currentWellbeing += GameManager.Instance.balance.wellbeingAddedPerHumanFeed;
         GameManager.Instance.humanAmount -= 1;
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterEatMeat");
+        UpdateButtons();
     }
 
     public void FeedVegetables()
     {
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodVegetablesValue);
-        CloseFoodSelector();
         GameManager.Instance.vegAmount -= 1;
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterEatVegetables");
+        UpdateButtons();
     }
 
     void OpenFoodSelector()
@@ -62,6 +62,19 @@ public class RoomPet : Singleton<RoomPet>
         obj.SetActive(true);
         obj.GetComponent<CanvasGroup>().alpha = 0;
 
+        UpdateButtons();
+
+        LTDescr tween = LeanTween.value(obj, 0, 1, 0.5f);
+
+        tween.setOnUpdate((float alpha) =>
+        {
+            obj.GetComponent<CanvasGroup>().alpha = alpha;
+        });
+        foodSelectorOpen = true;
+    }
+
+    void UpdateButtons()
+    {
         UIManager.Instance.SetText("TxtRatAmount", "x" + GameManager.Instance.ratAmount);
         if (GameManager.Instance.ratAmount <= 0)
         {
@@ -97,14 +110,6 @@ public class RoomPet : Singleton<RoomPet>
             GameObject btnRat = UIManager.Instance.FindInCanvas("BtnFeedVegetables");
             btnRat.GetComponent<Button>().interactable = true;
         }
-
-        LTDescr tween = LeanTween.value(obj, 0, 1, 0.5f);
-
-        tween.setOnUpdate((float alpha) =>
-        {
-            obj.GetComponent<CanvasGroup>().alpha = alpha;
-        });
-        foodSelectorOpen = true;
     }
 
     void CloseFoodSelector()

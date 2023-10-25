@@ -170,8 +170,7 @@ public class GameManager : Singleton<GameManager>
         });
 
         yield return new WaitForSeconds(1);
-
-        UIManager.Instance.FindInCanvas("TutorialRoom").SetActive(true);
+        // UIManager.Instance.FindInCanvas("TutorialRoom").SetActive(true);
     }
 
     IEnumerator StartEnd(AudioSource source)

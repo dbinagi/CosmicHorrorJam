@@ -16,6 +16,8 @@ public class DialogController : MonoBehaviour
 
     List<GameObject> randomSigns = new List<GameObject>();
 
+    int lastSign;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,12 +54,17 @@ public class DialogController : MonoBehaviour
 
     public int ShowRandomSign()
     {
-        int randomI = Random.Range(0, randomSigns.Count - 1);
         foreach (GameObject o in randomSigns)
         {
             o.SetActive(false);
         }
+        int randomI = Random.Range(0, randomSigns.Count - 1);
+        while (randomI == lastSign)
+        {
+            randomI = Random.Range(0, randomSigns.Count - 1);
+        }
         randomSigns[randomI].SetActive(true);
+        lastSign = randomI;
         return randomI;
     }
 

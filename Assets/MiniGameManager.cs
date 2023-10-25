@@ -5,6 +5,7 @@ using TurtleGames.Framework.Runtime.Core;
 using TurtleGames.Framework.Runtime.UI;
 using System;
 using UnityEngine.UI;
+using TurtleGames.Framework.Runtime.Audio;
 
 public class MiniGameManager : Singleton<MiniGameManager>
 {
@@ -109,30 +110,36 @@ public class MiniGameManager : Singleton<MiniGameManager>
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
+            AudioManager.Instance.PlayOneShot("eldritchpet_sfx_minigameCorrect");
         }
         else if (gesture.ToLower() == "vertical line" && currentSign == SIGN_VERTICAL)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
+            AudioManager.Instance.PlayOneShot("eldritchpet_sfx_minigameCorrect");
         }
         else if (gesture.ToLower() == "horizontal line" && currentSign == SIGN_HORIZONTAL)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
+            AudioManager.Instance.PlayOneShot("eldritchpet_sfx_minigameCorrect");
         }
         else if (gesture.ToLower() == "square" && currentSign == SIGN_SQUARE)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
+            AudioManager.Instance.PlayOneShot("eldritchpet_sfx_minigameCorrect");
         }
         else if (gesture.ToLower() == "u" && currentSign == SIGN_U)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
+            AudioManager.Instance.PlayOneShot("eldritchpet_sfx_minigameCorrect");
         }
         else
         {
             NotMatch();
+            AudioManager.Instance.PlayOneShot("eldritchpet_sfx_minigameWrong");
         }
 
         currentSign = GameManager.Instance.pet.ShowMiniGameSign();
@@ -141,6 +148,7 @@ public class MiniGameManager : Singleton<MiniGameManager>
     public void NotMatch()
     {
         currentTime -= GameManager.Instance.balance.miniGameTimeDecreasePerFailure;
+        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_minigameWrong");
     }
 
 }
