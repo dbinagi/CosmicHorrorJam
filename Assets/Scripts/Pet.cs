@@ -39,7 +39,7 @@ public class Pet : MonoBehaviour
     float lastPoop;
     Stack<int> poopStack = new Stack<int>();
 
-    float currentWellbeing;
+    public float currentWellbeing;
 
     float wellbeingLossPerPoopCD;
     float lastWellbeingLossPerPoopCheck;

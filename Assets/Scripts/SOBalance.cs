@@ -17,6 +17,7 @@ public class SOBalance : ScriptableObject
 
     public int plantTimeToGrab;
     public float ratReduceCooldownPerPlant;
+    public float wellbeingAddedPerHumanFeed;
 
     [Header("Level 0")]
     public float hungerMaxCooldownLevel0;
