@@ -1097,8 +1097,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -97}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -113}
+  m_SizeDelta: {x: -64, y: -350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &617970531
 MonoBehaviour:
@@ -1120,10 +1120,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ganaste capo
+  m_text: "The creature happily consumes the world and lets you and the cult live
+    throughout the new era.\r\r\nCongratulations!\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3cf314b2eae46674ebc57b3f8fa11ca0, type: 2}
-  m_sharedMaterial: {fileID: -1815402383365069492, guid: 3cf314b2eae46674ebc57b3f8fa11ca0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3889700989c0e0742b6457362705c63b, type: 2}
+  m_sharedMaterial: {fileID: -6854717571149348113, guid: 3889700989c0e0742b6457362705c63b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1132,7 +1133,7 @@ MonoBehaviour:
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
-  m_colorMode: 3
+  m_colorMode: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -1147,8 +1148,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3476,8 +3477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -96}
-  m_SizeDelta: {x: 0, y: 136.01}
+  m_AnchoredPosition: {x: 0, y: -112}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107177945
 MonoBehaviour:

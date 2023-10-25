@@ -20,7 +20,7 @@ MonoBehaviour:
   minCultPointsPerPoop: 6
   wellbeingCheckForPoopAroungMinCooldown: 2
   wellbeingCheckForPoopAroungMaxCooldown: 2
-  plantTimeToGrab: 12
+  plantTimeToGrab: 20
   ratReduceCooldownPerPlant: 2
   hungerMaxCooldownLevel0: 4
   hungerMinCooldownLevel0: 4
@@ -63,7 +63,7 @@ MonoBehaviour:
   RatSpeedLevel2: 3
   initialHumanCost: 25
   costIncreasePerPurchase: 10
-  maxWaterForPlant: 800
+  maxWaterForPlant: 720
   waterPerDrop: 1
   miniGameDurationLvl0: 30
   miniGameDurationLvl1: 30
