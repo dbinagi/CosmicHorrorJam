@@ -150,9 +150,8 @@ public class GameManager : Singleton<GameManager>
 
     IEnumerator StartGameRoutine()
     {
+        UIManager.Instance.FindInCanvas("MenuRoom").SetActive(false);
         RoomManager.Instance.MoveToRoom(RoomManager.ROOM_PET);
-
-        yield return new WaitForSeconds(0);
 
         GameObject obj = UIManager.Instance.FindInCanvas("Stats");
         obj.SetActive(true);
@@ -165,6 +164,9 @@ public class GameManager : Singleton<GameManager>
             obj.GetComponent<CanvasGroup>().alpha = alpha;
         });
 
+        yield return new WaitForSeconds(1);
+
+        UIManager.Instance.FindInCanvas("TutorialRoom").SetActive(true);
     }
 
     IEnumerator StartEnd(AudioSource source)

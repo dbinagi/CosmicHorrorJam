@@ -27,7 +27,7 @@ public class RoomManager : Singleton<RoomManager>
         currentRoom = ROOM_MENU;
         roomUI.Add(UIManager.Instance.FindInCanvas("PetRoom"));
         roomUI.Add(UIManager.Instance.FindInCanvas("CultRoom"));
-        roomUI.Add(UIManager.Instance.FindInCanvas("MenuRoom"));
+        roomUI.Add(UIManager.Instance.FindInCanvas("TutorialRoom"));
         roomUI.Add(UIManager.Instance.FindInCanvas("GardenRoom"));
     }
 
