@@ -101,4 +101,15 @@ public class RoomManager : Singleton<RoomManager>
 
     }
 
+    public void GoRightClick()
+    {
+        GoRight();
+        MoveToRoom(currentRoom);
+    }
+    public void GoLeftClick()
+    {
+        GoLeft();
+        MoveToRoom(currentRoom);
+    }
+
 }

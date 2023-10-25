@@ -43,7 +43,7 @@ public class MiniGameManager : Singleton<MiniGameManager>
 
         minigameStarted = true;
 
-        int currentSign = GameManager.Instance.pet.ShowMiniGameSign();
+        currentSign = GameManager.Instance.pet.ShowMiniGameSign();
     }
 
     void Update()
@@ -105,27 +105,27 @@ public class MiniGameManager : Singleton<MiniGameManager>
 
     public void Match(string gesture)
     {
-        if (gesture == "Triangle" && currentSign == SIGN_TRIANGLE)
+        if (gesture.ToLower() == "triangle" && currentSign == SIGN_TRIANGLE)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
         }
-        else if (gesture == "Vertical Line" && currentSign == SIGN_VERTICAL)
+        else if (gesture.ToLower() == "vertical line" && currentSign == SIGN_VERTICAL)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
         }
-        else if (gesture == "Horizontal Line" && currentSign == SIGN_HORIZONTAL)
+        else if (gesture.ToLower() == "horizontal line" && currentSign == SIGN_HORIZONTAL)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
         }
-        else if (gesture == "Square" && currentSign == SIGN_SQUARE)
+        else if (gesture.ToLower() == "square" && currentSign == SIGN_SQUARE)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;
         }
-        else if (gesture == "U" && currentSign == SIGN_U)
+        else if (gesture.ToLower() == "u" && currentSign == SIGN_U)
         {
             currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
             remainingSuccess--;

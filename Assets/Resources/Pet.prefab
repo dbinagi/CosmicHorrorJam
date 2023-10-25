@@ -406,7 +406,7 @@ MonoBehaviour:
   signLess: {fileID: 109376612117607610}
   signHappy: {fileID: 4264710095193502314}
   signSad: {fileID: 5172325692236710538}
-  signSquare: {fileID: 0}
+  signSquare: {fileID: 3831971503097790809}
 --- !u!1 &661799696230808525
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   signLess: {fileID: 3603946848635451882}
   signHappy: {fileID: 288694367386606099}
   signSad: {fileID: 3759093370254498009}
-  signSquare: {fileID: 0}
+  signSquare: {fileID: 5337313537505521765}
 --- !u!1 &980267122475187676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   signLess: {fileID: 1889503788796516110}
   signHappy: {fileID: 661799696230808525}
   signSad: {fileID: 6682386231473009151}
-  signSquare: {fileID: 0}
+  signSquare: {fileID: 5521446043197115615}
 --- !u!1 &4104288249335688746
 GameObject:
   m_ObjectHideFlags: 0

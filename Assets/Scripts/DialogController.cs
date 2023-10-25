@@ -39,11 +39,15 @@ public class DialogController : MonoBehaviour
         signSad.SetActive(false);
         signSquare.SetActive(false);
 
-        randomSigns.Add(signTriangle);
-        randomSigns.Add(signHorizontal);
-        randomSigns.Add(signVertical);
-        randomSigns.Add(signU);
-        randomSigns.Add(signSquare);
+        if (randomSigns.Count == 0)
+        {
+            randomSigns.Add(signTriangle);
+            randomSigns.Add(signHorizontal);
+            randomSigns.Add(signVertical);
+            randomSigns.Add(signU);
+            randomSigns.Add(signSquare);
+        }
+
     }
 
     public int ShowRandomSign()
