@@ -93,6 +93,11 @@ public class Pet : MonoBehaviour
             {
                 CheckWellbeingPoopAround();
             }
+
+            if (currentWellbeing <= 0)
+            {
+                GameManager.Instance.DieByWellbeing();
+            }
         }
     }
 
