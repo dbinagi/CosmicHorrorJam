@@ -20,9 +20,9 @@ MonoBehaviour:
   minCultPointsPerPoop: 6
   wellbeingCheckForPoopAroungMinCooldown: 2
   wellbeingCheckForPoopAroungMaxCooldown: 2
-  plantTimeToGrab: 20
+  plantTimeToGrab: 18
   ratReduceCooldownPerPlant: 2
-  wellbeingAddedPerHumanFeed: 10
+  wellbeingAddedPerHumanFeed: 20
   hungerMaxCooldownLevel0: 4
   hungerMinCooldownLevel0: 4
   hungerLossMinLevel0: 3
@@ -34,37 +34,37 @@ MonoBehaviour:
   wellbeingMinLossPerPoopLevel0: 5
   wellbeingMaxLossPerPoopLevel0: 5
   daysForLevel1: 4
-  hungerMaxCooldownLevel1: 4
-  hungerMinCooldownLevel1: 4
+  hungerMaxCooldownLevel1: 3
+  hungerMinCooldownLevel1: 3
   hungerLossMinLevel1: 6
   hungerLossMaxLevel1: 6
-  poopMaxCooldownLevel1: 6
-  poopMinCooldownLevel1: 10
-  wellbeingMinLossPerNotPoopLevel1: 15
-  wellbeingMaxLossPerNotPoopLevel1: 15
-  wellbeingMinLossPerPoopLevel1: 5
-  wellbeingMaxLossPerPoopLevel1: 5
+  poopMaxCooldownLevel1: 5
+  poopMinCooldownLevel1: 9
+  wellbeingMinLossPerNotPoopLevel1: 18
+  wellbeingMaxLossPerNotPoopLevel1: 18
+  wellbeingMinLossPerPoopLevel1: 6
+  wellbeingMaxLossPerPoopLevel1: 6
   daysForLevel2: 7
-  hungerMaxCooldownLevel2: 4
-  hungerMinCooldownLevel2: 4
+  hungerMaxCooldownLevel2: 2
+  hungerMinCooldownLevel2: 2
   hungerLossMinLevel2: 10
   hungerLossMaxLevel2: 10
-  poopMaxCooldownLevel2: 6
-  poopMinCooldownLevel2: 10
-  wellbeingMinLossPerNotPoopLevel2: 15
-  wellbeingMaxLossPerNotPoopLevel2: 15
-  wellbeingMinLossPerPoopLevel2: 5
-  wellbeingMaxLossPerPoopLevel2: 5
+  poopMaxCooldownLevel2: 4
+  poopMinCooldownLevel2: 8
+  wellbeingMinLossPerNotPoopLevel2: 20
+  wellbeingMaxLossPerNotPoopLevel2: 20
+  wellbeingMinLossPerPoopLevel2: 8
+  wellbeingMaxLossPerPoopLevel2: 8
   foodRatValue: 25
   foodVegetablesValue: 10
   foodHumanValue: 50
-  RatSpawnCooldown: 20
+  RatSpawnCooldown: 25
   RatSpeedLevel0: 3
   RatSpeedLevel1: 3
   RatSpeedLevel2: 3
   initialHumanCost: 25
   costIncreasePerPurchase: 10
-  maxWaterForPlant: 720
+  maxWaterForPlant: 600
   waterPerDrop: 1
   miniGameDurationLvl0: 30
   miniGameDurationLvl1: 30
@@ -73,6 +73,6 @@ MonoBehaviour:
   miniGameSuccessNeededLvl1: 12
   miniGameSuccessNeededLvl2: 14
   miniGameWellbeingCostForLosing: 0
-  miniGameWellbeingForSuccess: 50
+  miniGameWellbeingForSuccess: 30
   miniGameTimeDecreasePerFailure: 5
   miniGameTimeIncreasePerSuccess: 0
