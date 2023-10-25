@@ -14802,6 +14802,7 @@ Transform:
   - {fileID: 1993133423}
   - {fileID: 85785641}
   - {fileID: 1190591579}
+  - {fileID: 2104952417}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14815,7 +14816,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1507243398}
   - component: {fileID: 1507243399}
-  - component: {fileID: 1507243400}
   m_Layer: 5
   m_Name: GardenRoom
   m_TagString: Untagged
@@ -14860,24 +14860,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1507243400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507243397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67701cc35aecede42b0e26ee66715526, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plants:
-  - {fileID: 1234678483}
-  - {fileID: 1140622716}
-  - {fileID: 121587525}
-  - {fileID: 816272576}
-  - {fileID: 2049839750}
 --- !u!1001 &1515069124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18098,6 +18080,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2104952416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104952417}
+  - component: {fileID: 2104952418}
+  m_Layer: 0
+  m_Name: GardenRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104952417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104952416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1499734611}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104952418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104952416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67701cc35aecede42b0e26ee66715526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersistInScenes: 0
+  plants:
+  - {fileID: 1234678483}
+  - {fileID: 1140622716}
+  - {fileID: 121587525}
+  - {fileID: 816272576}
+  - {fileID: 2049839750}
 --- !u!1 &2126862266
 GameObject:
   m_ObjectHideFlags: 0

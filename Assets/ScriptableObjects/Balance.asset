@@ -21,6 +21,7 @@ MonoBehaviour:
   wellbeingCheckForPoopAroungMinCooldown: 2
   wellbeingCheckForPoopAroungMaxCooldown: 2
   plantTimeToGrab: 10
+  ratReduceCooldownPerPlant: 2
   hungerMaxCooldownLevel0: 4
   hungerMinCooldownLevel0: 4
   hungerLossMinLevel0: 3

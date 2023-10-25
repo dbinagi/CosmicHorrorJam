@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TurtleGames.Framework.Runtime.Core;
 using UnityEngine;
 
-public class RoomGarden : MonoBehaviour
+public class RoomGarden : Singleton<RoomGarden>
 {
 
     public List<Plant> plants;
@@ -17,6 +18,19 @@ public class RoomGarden : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public int GetPlantsReady()
+    {
+        int total = 0;
+        foreach (Plant plant in plants)
+        {
+            if (plant.currentStage == Plant.STAGE_READY)
+            {
+                total++;
+            }
+        }
+        return total;
     }
 
 }

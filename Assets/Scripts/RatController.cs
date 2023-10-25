@@ -26,7 +26,9 @@ public class RatController : Singleton<RatController>
     {
         if (GameManager.Instance.gameStarted)
         {
-            if (Time.time - lastRat >= GameManager.Instance.balance.RatSpawnCooldown)
+            float cooldown = GameManager.Instance.balance.RatSpawnCooldown - (GameManager.Instance.balance.ratReduceCooldownPerPlant * RoomGarden.Instance.GetPlantsReady());
+            Debug.Log(cooldown);
+            if (Time.time - lastRat >= cooldown)
             {
                 if (RoomManager.Instance.currentRoom != 2)
                     SpawnRat();

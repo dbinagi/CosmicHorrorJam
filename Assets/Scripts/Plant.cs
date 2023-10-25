@@ -37,7 +37,6 @@ public class Plant : MonoBehaviour
         {
             if (waterSlider.value >= waterSlider.maxValue)
             {
-                // SetStage(STAGE_READY);
                 SetStage(STAGE_WAIT);
             }
         }
