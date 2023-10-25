@@ -87,9 +87,14 @@ public class SOBalance : ScriptableObject
     public float waterPerDrop;
 
     [Header("Mini Game")]
-    public int miniGameDuration;
-    public int miniGameSliderMax;
-    public float miniGameTimeDecreaseConstant;
+    public int miniGameDurationLvl0;
+    public int miniGameDurationLvl1;
+    public int miniGameDurationLvl2;
+
+    public int miniGameSuccessNeededLvl0;
+    public int miniGameSuccessNeededLvl1;
+    public int miniGameSuccessNeededLvl2;
+
     public float miniGameWellbeingCostForLosing;
     public float miniGameWellbeingForSuccess;
     public float miniGameTimeDecreasePerFailure;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9dea9b74b708b3489ea313065d9d59c, type: 3}
   m_Name: Balance
   m_EditorClassIdentifier: 
-  hourDuration: 2
+  hourDuration: 1
   daysForEnd: 10
   petMaxHunger: 100
   petMaxWellbeing: 100
@@ -63,10 +63,13 @@ MonoBehaviour:
   costIncreasePerPurchase: 10
   maxWaterForPlant: 800
   waterPerDrop: 1
-  miniGameDuration: 61
-  miniGameSliderMax: 500
-  miniGameTimeDecreaseConstant: 0.05
+  miniGameDurationLvl0: 30
+  miniGameDurationLvl1: 25
+  miniGameDurationLvl2: 20
+  miniGameSuccessNeededLvl0: 10
+  miniGameSuccessNeededLvl1: 12
+  miniGameSuccessNeededLvl2: 14
   miniGameWellbeingCostForLosing: 10
   miniGameWellbeingForSuccess: 50
-  miniGameTimeDecreasePerFailure: 10
-  miniGameTimeIncreasePerSuccess: 30
+  miniGameTimeDecreasePerFailure: 5
+  miniGameTimeIncreasePerSuccess: 5

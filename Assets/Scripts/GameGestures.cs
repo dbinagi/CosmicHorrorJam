@@ -56,13 +56,13 @@ public class GameGestures : MonoBehaviour
             ImageGestureImage match = ImageScript.CheckForImageMatch(false);
             if (match != null)
             {
-                Debug.Log("Found image match: " + match.Name);
+                // Debug.Log("Found image match: " + match.Name);
                 MiniGameManager.Instance.Match(match.Name);
             }
             else
             {
                 MiniGameManager.Instance.NotMatch();
-                Debug.Log("No match found!");
+                // Debug.Log("No match found!");
             }
 
             linesAmount = 0;

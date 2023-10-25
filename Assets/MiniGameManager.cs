@@ -12,15 +12,13 @@ public class MiniGameManager : Singleton<MiniGameManager>
     [SerializeField] GameObject writingPanel;
     [SerializeField] GameObject petStats;
     [SerializeField] GameObject room;
-    [SerializeField] GameObject slider;
-
-    [SerializeField] DialogController lvl0Dialog;
 
     float currentTime;
 
     bool minigameStarted = false;
 
     int currentSign;
+    int remainingSuccess;
 
     public const int SIGN_TRIANGLE = 0;
     public const int SIGN_HORIZONTAL = 1;
@@ -35,7 +33,9 @@ public class MiniGameManager : Singleton<MiniGameManager>
         Fade(petStats, 1, 0, 0.5f);
         Fade(room, 1, 0, 0.5f);
         Fade(writingPanel, 0, 1, 0.5f);
-        currentTime = GameManager.Instance.balance.miniGameDuration;
+
+        currentTime = GameManager.Instance.GetMiniGameTime();
+        remainingSuccess = GameManager.Instance.GetMiniGameSuccessNeeded();
 
         TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
         string formattedTime = string.Format("{0:00}:{1:00}", timeSpan.Minutes, timeSpan.Seconds);
@@ -44,8 +44,6 @@ public class MiniGameManager : Singleton<MiniGameManager>
         minigameStarted = true;
 
         int currentSign = GameManager.Instance.pet.ShowMiniGameSign();
-        slider.GetComponent<Slider>().maxValue = GameManager.Instance.balance.miniGameSliderMax;
-        slider.GetComponent<Slider>().value = GameManager.Instance.balance.miniGameSliderMax;
     }
 
     void Update()
@@ -58,18 +56,18 @@ public class MiniGameManager : Singleton<MiniGameManager>
 
             if (currentTime == 0)
             {
-                EndMiniGame();
+                EndMiniGame(false);
             }
 
             TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
             string formattedTime = string.Format("{0:00}:{1:00}", timeSpan.Minutes, timeSpan.Seconds);
             UIManager.Instance.SetText("TxtTimer", formattedTime);
 
-            slider.GetComponent<Slider>().value -= GameManager.Instance.balance.miniGameTimeDecreaseConstant;
+            UIManager.Instance.SetText("TxtMiniGameRemaining", "Remaining: " + remainingSuccess);
 
-            if (slider.GetComponent<Slider>().value <= 0)
+            if (remainingSuccess == 0)
             {
-                EndMiniGame(false);
+                EndMiniGame();
             }
         }
     }
@@ -97,7 +95,7 @@ public class MiniGameManager : Singleton<MiniGameManager>
 
     void Fade(GameObject obj, float from, float to, float duration)
     {
-        // LeanTween.cancel(obj);
+        LeanTween.cancel(obj);
         LTDescr tween = LeanTween.value(obj, from, to, duration);
         tween.setOnUpdate((float alpha) =>
         {
@@ -109,23 +107,28 @@ public class MiniGameManager : Singleton<MiniGameManager>
     {
         if (gesture == "Triangle" && currentSign == SIGN_TRIANGLE)
         {
-            slider.GetComponent<Slider>().value += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            remainingSuccess--;
         }
         else if (gesture == "Vertical Line" && currentSign == SIGN_VERTICAL)
         {
-            slider.GetComponent<Slider>().value += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            remainingSuccess--;
         }
         else if (gesture == "Horizontal Line" && currentSign == SIGN_HORIZONTAL)
         {
-            slider.GetComponent<Slider>().value += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            remainingSuccess--;
         }
         else if (gesture == "Square" && currentSign == SIGN_SQUARE)
         {
-            slider.GetComponent<Slider>().value += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            remainingSuccess--;
         }
         else if (gesture == "U" && currentSign == SIGN_U)
         {
-            slider.GetComponent<Slider>().value += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            currentTime += GameManager.Instance.balance.miniGameTimeIncreasePerSuccess;
+            remainingSuccess--;
         }
         else
         {
@@ -137,7 +140,7 @@ public class MiniGameManager : Singleton<MiniGameManager>
 
     public void NotMatch()
     {
-        slider.GetComponent<Slider>().value -= GameManager.Instance.balance.miniGameTimeDecreasePerFailure;
+        currentTime -= GameManager.Instance.balance.miniGameTimeDecreasePerFailure;
     }
 
 }

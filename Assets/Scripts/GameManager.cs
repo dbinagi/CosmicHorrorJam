@@ -151,7 +151,8 @@ public class GameManager : Singleton<GameManager>
     IEnumerator StartGameRoutine()
     {
         RoomManager.Instance.MoveToRoom(RoomManager.ROOM_PET);
-        yield return new WaitForSeconds(1.5f);
+
+        yield return new WaitForSeconds(0);
 
         GameObject obj = UIManager.Instance.FindInCanvas("Stats");
         obj.SetActive(true);
@@ -192,5 +193,37 @@ public class GameManager : Singleton<GameManager>
     public void MiniGamePassed()
     {
         pet.LossWellbeing(balance.miniGameWellbeingForSuccess * -1);
+    }
+
+    public int GetMiniGameTime()
+    {
+        if (pet.currentLevel == 0)
+        {
+            return balance.miniGameDurationLvl0;
+        }
+        else if (pet.currentLevel == 1)
+        {
+            return balance.miniGameDurationLvl1;
+        }
+        else
+        {
+            return balance.miniGameDurationLvl2;
+        }
+    }
+
+    public int GetMiniGameSuccessNeeded()
+    {
+        if (pet.currentLevel == 0)
+        {
+            return balance.miniGameSuccessNeededLvl0;
+        }
+        else if (pet.currentLevel == 1)
+        {
+            return balance.miniGameSuccessNeededLvl1;
+        }
+        else
+        {
+            return balance.miniGameSuccessNeededLvl2;
+        }
     }
 }
