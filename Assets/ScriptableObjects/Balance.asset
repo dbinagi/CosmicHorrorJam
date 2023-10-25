@@ -20,6 +20,7 @@ MonoBehaviour:
   minCultPointsPerPoop: 6
   wellbeingCheckForPoopAroungMinCooldown: 2
   wellbeingCheckForPoopAroungMaxCooldown: 2
+  plantTimeToGrab: 10
   hungerMaxCooldownLevel0: 4
   hungerMinCooldownLevel0: 4
   hungerLossMinLevel0: 3

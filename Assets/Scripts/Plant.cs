@@ -7,16 +7,22 @@ public class Plant : MonoBehaviour
     [SerializeField]
     Slider waterSlider;
 
+    [SerializeField]
+    GameObject waitIndicator;
+
     public int currentStage;
 
     public const int STAGE_PLANTED = 0;
     public const int STAGE_READY = 1;
+    public const int STAGE_WAIT = 2;
 
     [SerializeField]
     public GameObject plantStage0;
 
     [SerializeField]
     public GameObject plantStage1;
+
+    float timeSetWaited;
 
     void Start()
     {
@@ -30,6 +36,15 @@ public class Plant : MonoBehaviour
         if (currentStage == STAGE_PLANTED)
         {
             if (waterSlider.value >= waterSlider.maxValue)
+            {
+                // SetStage(STAGE_READY);
+                SetStage(STAGE_WAIT);
+            }
+        }
+
+        if (GameManager.Instance.gameStarted && currentStage == STAGE_WAIT)
+        {
+            if (Time.time - timeSetWaited >= GameManager.Instance.balance.plantTimeToGrab)
             {
                 SetStage(STAGE_READY);
             }
@@ -53,18 +68,26 @@ public class Plant : MonoBehaviour
             waterSlider.value = 0;
             plantStage0.SetActive(true);
             plantStage1.SetActive(false);
+            waitIndicator.SetActive(false);
         }
         else if (currentStage == STAGE_READY)
         {
             waterSlider.gameObject.SetActive(false);
             plantStage0.SetActive(false);
             plantStage1.SetActive(true);
+            waitIndicator.SetActive(false);
+        }
+        else if (currentStage == STAGE_WAIT)
+        {
+            waterSlider.gameObject.SetActive(false);
+            timeSetWaited = Time.time;
+            waitIndicator.SetActive(true);
         }
     }
 
     public void Take()
     {
-        
+
         SetStage(STAGE_PLANTED);
     }
 

@@ -118,7 +118,14 @@ public class Pet : MonoBehaviour
             GameManager.Instance.GameEndingLevel3Reached();
             return;
         }
-        AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterLevelUp_op2");
+
+        // AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterLevelUp_op2");
+        // Sound music = AudioManager.Instance.GetSound("eldritchPet_music_mainLoop");
+        // music.source.pitch -= 0.05f;
+        //
+        // Sound music2 = AudioManager.Instance.GetSound("eldrichPet_music_startLoop");
+        // music2.source.pitch -= 0.05f;
+
         currentLevel = level;
         Camera.main.GetComponent<CameraController>().FadeOutToColor(0.1f);
         StartCoroutine(ChangeSprite());

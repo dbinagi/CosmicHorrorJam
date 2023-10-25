@@ -15,6 +15,8 @@ public class SOBalance : ScriptableObject
     public int wellbeingCheckForPoopAroungMinCooldown;
     public int wellbeingCheckForPoopAroungMaxCooldown;
 
+    public int plantTimeToGrab;
+
     [Header("Level 0")]
     public float hungerMaxCooldownLevel0;
     public float hungerMinCooldownLevel0;
