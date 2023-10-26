@@ -41,7 +41,7 @@ public class RoomPet : Singleton<RoomPet>
     {
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_uiClick");
         GameManager.Instance.pet.Feed(GameManager.Instance.balance.foodHumanValue);
-        GameManager.Instance.pet.currentWellbeing += GameManager.Instance.balance.wellbeingAddedPerHumanFeed;
+        GameManager.Instance.pet.LossWellbeing(GameManager.Instance.balance.wellbeingAddedPerHumanFeed);
         GameManager.Instance.humanAmount -= 1;
         AudioManager.Instance.PlayOneShot("eldritchpet_sfx_monsterEatMeat");
         UpdateButtons();

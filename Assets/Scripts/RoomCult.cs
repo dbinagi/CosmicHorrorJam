@@ -47,7 +47,7 @@ public class RoomCult : Singleton<RoomCult>
         obj.SetActive(true);
         obj.GetComponent<CanvasGroup>().alpha = 0;
 
-        UIManager.Instance.SetText("TxtHumanCost", "Human $" + GameManager.Instance.GetHumanCost() + " points");
+        UIManager.Instance.SetText("TxtHumanCost", "Human: " + GameManager.Instance.GetHumanCost() + " tokens");
         if (GameManager.Instance.currentCultPoints < GameManager.Instance.GetHumanCost())
         {
             GameObject btnHuman = UIManager.Instance.FindInCanvas("BtnBuyHuman");

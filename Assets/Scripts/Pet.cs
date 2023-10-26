@@ -39,7 +39,7 @@ public class Pet : MonoBehaviour
     float lastPoop;
     Stack<int> poopStack = new Stack<int>();
 
-    public float currentWellbeing;
+    float currentWellbeing;
 
     float wellbeingLossPerPoopCD;
     float lastWellbeingLossPerPoopCheck;
@@ -114,6 +114,11 @@ public class Pet : MonoBehaviour
         currentHunger = Mathf.Clamp(currentHunger + food, 0, GameManager.Instance.balance.petMaxHunger);
         GameObject slider = UIManager.Instance.FindInCanvas("SliderHunger");
         slider.GetComponent<Slider>().value = currentHunger;
+    }
+
+    public void IncreaseWellbeing(float amount)
+    {
+        currentWellbeing += amount;
     }
 
     public void SetLevel(int level)

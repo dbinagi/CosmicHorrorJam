@@ -144,7 +144,7 @@ public class GameManager : Singleton<GameManager>
 
     public void RefreshCultPoints()
     {
-        UIManager.Instance.SetText("TxtCultPoints", "Cult Points: " + currentCultPoints);
+        UIManager.Instance.SetText("TxtCultPoints", "Cult Tokens: " + currentCultPoints);
     }
 
     public void StartGame()
