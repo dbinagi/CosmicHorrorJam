@@ -16,8 +16,8 @@ MonoBehaviour:
   daysForEnd: 10
   petMaxHunger: 100
   petMaxWellbeing: 100
-  maxCultPointsPerPoop: 4
-  minCultPointsPerPoop: 6
+  maxCultPointsPerPoop: 8
+  minCultPointsPerPoop: 8
   wellbeingCheckForPoopAroungMinCooldown: 2
   wellbeingCheckForPoopAroungMaxCooldown: 2
   plantTimeToGrab: 18
@@ -55,7 +55,7 @@ MonoBehaviour:
   wellbeingMaxLossPerNotPoopLevel2: 20
   wellbeingMinLossPerPoopLevel2: 8
   wellbeingMaxLossPerPoopLevel2: 8
-  foodRatValue: 25
+  foodRatValue: 20
   foodVegetablesValue: 10
   foodHumanValue: 50
   RatSpawnCooldown: 25
